@@ -25,4 +25,6 @@ release
 *.sln
 *.sw?
 
+# Package file
 out/
+release/
