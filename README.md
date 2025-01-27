@@ -61,4 +61,4 @@ Thank you for using Allama! We hope it enhances your local LLM experience.
 
 ## Acknowledgements
 
-This project is based on [Original Project Name](https://github.com/humangems/ollamate), created by [Michael Chen](https://github.com/mechiland).
+This project is based on [Ollamate](https://github.com/humangems/ollamate), created by [Michael Chen](https://github.com/mechiland).
