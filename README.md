@@ -1,18 +1,8 @@
-> [!WARNING]
-> Discontinued due to an abundance of similar products. Try Msty, currently the most promising option as of September 2024.
+# Allama
 
-# Ollamate
+**Allama: Ollama Desktop Client for Everyday Use**
 
-<img src="https://github.com/humangems/ollamate/assets/33785/8c2f0f42-780e-404e-acff-3c87f7eb3085" width="128" />
-
-**Ollamate: Ollama Desktop Client for Everyday Use**
-
-**Download (Mac only)**: https://github.com/humangems/ollamate/releases/latest
-
-
-Ollamate is an open-source ChatGPT-like desktop client built around Ollama, providing similar features but entirely local. It leverages local LLM models like Llama 3, Qwen2, Phi3, etc. via Ollama, ensuring privacy and offline capability.
-
-![](./public/demo.png)
+Allama is an open-source ChatGPT-like desktop client built around Ollama, providing similar features but entirely local. It leverages local LLM models like Llama 3, Qwen2, Phi3, etc. via Ollama, ensuring privacy and offline capability.
 
 ## Features
 
@@ -25,7 +15,7 @@ Ollamate is an open-source ChatGPT-like desktop client built around Ollama, prov
 ### For End Users
 
 1. Ensure you have [Ollama](https://ollama.com) installed on your system. Make sure you have at least one model downloaded. (For example, Run `ollama run phi3`)
-2. Download the binary from [Github]([https://](https://github.com/humangems/ollamate/releases)).
+2. Download the Allama.
 3. Use it just like a normal app.
 
 ### For Developers
@@ -35,10 +25,10 @@ Ollamate is an open-source ChatGPT-like desktop client built around Ollama, prov
 3. Install dependencies and run the app.
 
 ```bash
-git clone https://github.com/humangems/ollamate.git
-cd ollamate
-yarn install
-yarn dev
+git clone https://github.com/yuma-shintani/allama.git
+cd allama
+npm run install
+npm run dev
 ```
 
 ## Tech stack
@@ -67,4 +57,8 @@ For any inquiries or support, please open an issue on GitHub.
 
 ---
 
-Thank you for using Ollamate! We hope it enhances your local LLM experience.
+Thank you for using Allama! We hope it enhances your local LLM experience.
+
+## Acknowledgements
+
+This project is based on [Original Project Name](https://github.com/humangems/ollamate), created by [Michael Chen](https://github.com/mechiland).
