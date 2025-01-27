@@ -1,13 +1,18 @@
-import { createAsyncThunk, createEntityAdapter, createSlice } from '@reduxjs/toolkit';
-import { Model } from '../../lib/types';
-import getOllama from '../../lib/ollamaApi';
+import {
+  createAsyncThunk,
+  createEntityAdapter,
+  createSlice,
+} from "@reduxjs/toolkit";
+import { Model } from "../../lib/types";
+import getOllama from "../../lib/ollamaApi";
+import { toast } from "react-toastify";
 
 const modelAdapter = createEntityAdapter<Model, string>({
-  selectId: (model) => model.name
+  selectId: (model) => model.name,
 });
 
 export const modelSlice = createSlice({
-  name: 'models',
+  name: "models",
   initialState: modelAdapter.getInitialState(),
   reducers: {
     allModelsLoaded: modelAdapter.setAll,
@@ -15,19 +20,19 @@ export const modelSlice = createSlice({
 });
 
 export const getAllModelsThunk = createAsyncThunk<Model[]>(
-  'models/getAllModels',
+  "models/getAllModels",
   async (_payload, thunkAPI) => {
     let response;
     const ollamaInstance = await getOllama();
     try {
       response = await ollamaInstance.list();
     } catch (error) {
-      alert(`Failed to fetch models\n\n${error}`);
+      toast.error(`Failed to fetch models\n\n${error}`);
     }
 
     if (!response) return [];
 
-    const models  = response.models;
+    const models = response.models;
     thunkAPI.dispatch(allModelsLoaded(models));
     return models;
   }

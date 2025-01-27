@@ -3,7 +3,6 @@ import { Heading } from "@radix-ui/themes";
 import { getAllNotes } from "../lib/rxdb";
 
 export async function loader() {
-
   const result = await getAllNotes();
   const docs = result;
 
@@ -16,9 +15,7 @@ export default function IndexPage() {
   return (
     <div className="mx-auto w-[600px]">
       <Heading size="8">Flow</Heading>
-      <div>
-        Index - left empty for now
-      </div>
+      <div>Index - left empty for now</div>
     </div>
   );
 }

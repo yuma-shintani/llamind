@@ -1,107 +1,107 @@
-import { addRxPlugin, createRxDatabase } from 'rxdb';
-import { RxDBDevModePlugin } from 'rxdb/plugins/dev-mode';
-import { getRxStorageDexie } from 'rxdb/plugins/storage-dexie';
-import { ImportedNote, Note } from './types';
-import { nanoid } from '@reduxjs/toolkit';
+import { addRxPlugin, createRxDatabase } from "rxdb";
+import { RxDBDevModePlugin } from "rxdb/plugins/dev-mode";
+import { getRxStorageDexie } from "rxdb/plugins/storage-dexie";
+import { ImportedNote, Note } from "./types";
+import { nanoid } from "@reduxjs/toolkit";
 
 addRxPlugin(RxDBDevModePlugin);
 
 const db = await createRxDatabase({
-  name: 'ollamate',
+  name: "allama",
   storage: getRxStorageDexie(),
 });
 
 const noteSchema = {
   version: 0,
-  primaryKey: 'id',
-  type: 'object',
+  primaryKey: "id",
+  type: "object",
   properties: {
     id: {
-      type: 'string',
+      type: "string",
       maxLength: 21, // <- the primary key must have set maxLength
     },
     title: {
-      type: 'string',
+      type: "string",
     },
     content: {
-      type: 'string',
+      type: "string",
     },
     created_at: {
-      type: 'number',
+      type: "number",
     },
     updated_at: {
-      type: 'number',
+      type: "number",
     },
   },
-  required: ['id', 'content', 'created_at', 'updated_at'],
+  required: ["id", "content", "created_at", "updated_at"],
 };
 
 const chatSchema = {
   version: 0,
-  primaryKey: 'id',
-  type: 'object',
+  primaryKey: "id",
+  type: "object",
   properties: {
     id: {
-      type: 'string',
+      type: "string",
       maxLength: 21, // <- the primary key must have set maxLength
     },
     model: {
-      type: 'string',
+      type: "string",
     },
     provider: {
-      type: 'string',
+      type: "string",
     },
     title: {
-      type: 'string',
+      type: "string",
     },
     created_at: {
-      type: 'number',
+      type: "number",
     },
     updated_at: {
-      type: 'number',
+      type: "number",
     },
   },
-  required: ['id', 'model', 'created_at', 'updated_at'],
+  required: ["id", "model", "created_at", "updated_at"],
 };
 
 const messageSchema = {
   version: 0,
-  primaryKey: 'id',
-  type: 'object',
+  primaryKey: "id",
+  type: "object",
   properties: {
     id: {
-      type: 'string',
+      type: "string",
       maxLength: 21, // <- the primary key must have set maxLength
     },
     chat_id: {
-      type: 'string',
+      type: "string",
     },
     model: {
-      type: 'string',
+      type: "string",
     },
     provider: {
-      type: 'string',
+      type: "string",
     },
     role: {
-      type: 'string',
+      type: "string",
     },
     content: {
-      type: 'string',
+      type: "string",
     },
     images: {
-      type: 'array',
+      type: "array",
       items: {
-        type: 'string'
-      }
+        type: "string",
+      },
     },
     created_at: {
-      type: 'number',
+      type: "number",
     },
     updated_at: {
-      type: 'number',
+      type: "number",
     },
   },
-  required: ['id', 'chat_id', 'role', 'content', 'created_at', 'updated_at'],
+  required: ["id", "chat_id", "role", "content", "created_at", "updated_at"],
 };
 
 export const collections = await db.addCollections({
@@ -119,7 +119,7 @@ export const collections = await db.addCollections({
 export async function getAllNotes() {
   const result = await collections.notes
     .find({
-      sort: [{ created_at: 'desc' }],
+      sort: [{ created_at: "desc" }],
     })
     .exec();
 
@@ -142,7 +142,11 @@ export async function addNote() {
 export async function upsertNote(note: Note) {
   const loaded = await collections.notes.findOne(note.id).exec();
   if (!loaded) {
-    const createdNote = { ...note, created_at: Date.now(), updated_at: Date.now() };
+    const createdNote = {
+      ...note,
+      created_at: Date.now(),
+      updated_at: Date.now(),
+    };
     const newNote = await collections.notes.insert(createdNote);
     return newNote.toJSON();
   } else {
@@ -153,6 +157,6 @@ export async function upsertNote(note: Note) {
 }
 
 export async function importNote(note: ImportedNote) {
-  const newNote = await collections.notes.insert({...note, id: nanoid()});
+  const newNote = await collections.notes.insert({ ...note, id: nanoid() });
   return newNote.toJSON();
 }

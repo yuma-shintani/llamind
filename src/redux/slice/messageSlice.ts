@@ -5,12 +5,13 @@ import {
   createSelector,
   createSlice,
   nanoid,
-} from '@reduxjs/toolkit';
-import { upsertChat } from '../../lib/chatApi';
-import { addMessage, getMessagesByChatId } from '../../lib/messageApi';
-import getOllama from '../../lib/ollamaApi';
-import { Chat, Message } from '../../lib/types';
-import { RootState } from '../store';
+} from "@reduxjs/toolkit";
+import { upsertChat } from "../../lib/chatApi";
+import { addMessage, getMessagesByChatId } from "../../lib/messageApi";
+import getOllama from "../../lib/ollamaApi";
+import { Chat, Message } from "../../lib/types";
+import { RootState } from "../store";
+import { toast } from "react-toastify";
 
 const messageAdapter = createEntityAdapter<Message>({
   sortComparer: (a, b) => a.created_at! - b.created_at!,
@@ -28,12 +29,12 @@ type InitialState = {
   isStreaming: Record<string, boolean>;
 };
 
-const initialState:InitialState = {
+const initialState: InitialState = {
   isStreaming: {},
 };
 
 export const messageSlice = createSlice({
-  name: 'messages',
+  name: "messages",
   initialState: messageAdapter.getInitialState(initialState),
   reducers: {
     allModelsLoaded: messageAdapter.setAll,
@@ -44,9 +45,9 @@ export const messageSlice = createSlice({
       messageAdapter.addOne(state, {
         id: action.payload.messageId,
         chat_id: action.payload.chatId,
-        role: 'assistant',
+        role: "assistant",
         model: action.payload.model,
-        content: '',
+        content: "",
         created_at: Date.now(),
         updated_at: Date.now(),
       });
@@ -56,7 +57,8 @@ export const messageSlice = createSlice({
     streaming: (state, action: PayloadAction<Message>) => {
       state.entities[action.payload.id].content += action.payload.content;
       state.entities[action.payload.id].eval_count = action.payload.eval_count;
-      state.entities[action.payload.id].eval_duration = action.payload.eval_duration;
+      state.entities[action.payload.id].eval_duration =
+        action.payload.eval_duration;
       state.entities[action.payload.id].updated_at = Date.now();
     },
 
@@ -80,24 +82,23 @@ export type NewMessagePayloadType = {
 };
 
 export const getMessagesThunk = createAsyncThunk<Message[], string>(
-  'messages/getMessages',
-  async(payload, _thunkAPI) => {
-    const messages = await getMessagesByChatId(payload)
+  "messages/getMessages",
+  async (payload, _thunkAPI) => {
+    const messages = await getMessagesByChatId(payload);
     return messages;
   }
-)
+);
 
 export const llmChatThunk = createAsyncThunk<void, NewMessagePayloadType>(
-  'messages/llmChat',
+  "messages/llmChat",
   async (payload, thunkAPI) => {
-
     const userMessage: Message = {
       chat_id: payload.chatId,
       role: "user",
       content: payload.content,
       images: payload.images,
       id: nanoid(),
-    }
+    };
 
     const server = await addMessage(userMessage);
 
@@ -110,12 +111,15 @@ export const llmChatThunk = createAsyncThunk<void, NewMessagePayloadType>(
         return {
           role: m.role,
           content: m.content,
-          images: m.images
+          images: m.images,
         };
       });
 
     const messageId = nanoid();
-    const systemMsg = { role: 'system', content: 'You are a helpful assistant.' };
+    const systemMsg = {
+      role: "system",
+      content: "You are a helpful assistant.",
+    };
 
     thunkAPI.dispatch(
       streamStart({
@@ -136,14 +140,16 @@ export const llmChatThunk = createAsyncThunk<void, NewMessagePayloadType>(
         messages: [systemMsg, ...history],
         stream: true,
       });
-    } catch(e) {
+    } catch (e) {
       const error = e as Error;
-      alert(`Error occurred while chatting with the model: ${payload.model}\n\n${error.message}`);
+      toast.error(
+        `Error occurred while chatting with the model: ${payload.model}\n\n${error.message}`
+      );
     }
 
     if (!response) return;
 
-    let content = '';
+    let content = "";
 
     for await (const part of response) {
       content += part.message.content;
@@ -175,10 +181,10 @@ export const llmChatThunk = createAsyncThunk<void, NewMessagePayloadType>(
       chat_id: payload.chatId,
       content: content,
       role: "assistant",
-      model: payload.model
-    }
+      model: payload.model,
+    };
 
-    await addMessage(newMsg)
+    await addMessage(newMsg);
 
     thunkAPI.dispatch(
       streamEnd({
@@ -211,7 +217,12 @@ export const countMessagesByChatId = createSelector(
 );
 
 // Action creators are generated for each case reducer function
-export const { allModelsLoaded, streaming, streamStart, streamEnd, newUserMessage } =
-  messageSlice.actions;
+export const {
+  allModelsLoaded,
+  streaming,
+  streamStart,
+  streamEnd,
+  newUserMessage,
+} = messageSlice.actions;
 
 export default messageSlice.reducer;
