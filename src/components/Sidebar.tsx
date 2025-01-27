@@ -1,31 +1,35 @@
-import { Button } from '@radix-ui/themes';
-import { motion } from 'framer-motion';
-import { PenBoxIcon, SettingsIcon } from 'lucide-react';
-import { useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import { chatSelectors, getAllChatsThunk } from '../redux/slice/chatSlice';
-import { showSetting } from '../redux/slice/uiSlice';
-import { useAppDispatch, useAppSelector } from '../redux/store';
-import ChatItem from './chat/ChatItem';
+import { Button } from "@radix-ui/themes";
+import { motion } from "framer-motion";
+import { PenBoxIcon, SettingsIcon, Package } from "lucide-react";
+import { useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { chatSelectors, getAllChatsThunk } from "../redux/slice/chatSlice";
+import { showSetting, showOllamaManagement } from "../redux/slice/uiSlice";
+import { useAppDispatch, useAppSelector } from "../redux/store";
+import ChatItem from "./chat/ChatItem";
 
 export default function Sidebar() {
   const sidebarOpen = useAppSelector((state) => state.ui.sidebarOpen);
   const dispatch = useAppDispatch();
-  const chats = useAppSelector(state => chatSelectors.selectAll(state.chats));
+  const chats = useAppSelector((state) => chatSelectors.selectAll(state.chats));
   const { chatId } = useParams();
   const navigate = useNavigate();
 
   useEffect(() => {
     dispatch(getAllChatsThunk());
-  }, [])
+  }, []);
 
   const handleNew = () => {
-    navigate('/');
-  }
+    navigate("/");
+  };
 
   const handleSetting = () => {
     dispatch(showSetting());
-  }
+  };
+
+  const handleOllamaManagement = () => {
+    dispatch(showOllamaManagement());
+  };
 
   return (
     <motion.div
@@ -50,16 +54,36 @@ export default function Sidebar() {
 
           <div className="flex-1 mt-4">
             <div className="text-1 px-2 py-1 shrink-0">Conversations</div>
-            <div className="overflow-y-auto h-[calc(100vh-170px)] space-y-[1px]">
+            <div className="overflow-y-auto h-[calc(100vh-200px)] space-y-[1px]">
               {chats.map((chat) => (
-                <ChatItem chat={chat} key={chat.id} active={chat.id === chatId} />
+                <ChatItem
+                  chat={chat}
+                  key={chat.id}
+                  active={chat.id === chatId}
+                />
               ))}
             </div>
           </div>
         </div>
 
+        <div className="px-4 mb-3">
+          <Button
+            className="w-full h-6 justify-start"
+            variant="ghost"
+            color="gray"
+            onClick={handleOllamaManagement}
+          >
+            <Package size={16} />
+            Models
+          </Button>
+        </div>
         <div className="px-4">
-          <Button className="w-full h-6 justify-start" variant="ghost" color="gray" onClick={handleSetting}>
+          <Button
+            className="w-full h-6 justify-start"
+            variant="ghost"
+            color="gray"
+            onClick={handleSetting}
+          >
             <SettingsIcon size={16} />
             Settings
           </Button>
