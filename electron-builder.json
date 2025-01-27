@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
+  "appId": "Allama",
+  "asar": true,
+  "productName": "Allama",
+  "directories": {
+    "output": "release/${version}"
+  },
+  "files": ["dist", "dist-electron"],
+  "mac": {
+    "target": ["dmg"],
+    "icon": "dist/icon.ico",
+    "artifactName": "allama-${version}.${ext}"
+  },
+  "dmg": {},
+  "win": {
+    "icon": "dist/icon.ico",
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      },
+      "zip"
+    ],
+    "artifactName": "allama-${version}.${ext}"
+  },
+  "nsis": {
+    "oneClick": true,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": false,
+    "deleteAppDataOnUninstall": true,
+    "installerIcon": "dist/icon.ico",
+    "uninstallerIcon": "dist/icon.ico",
+    "installerHeaderIcon": "dist/icon.ico"
+  },
+  "linux": {
+    "target": ["AppImage"],
+    "artifactName": "${productName}-Linux-${version}.${ext}"
+  }
+}
