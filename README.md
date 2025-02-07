@@ -1,13 +1,20 @@
 # Allama
 
-**Allama: Ollama Desktop Client for Everyday Use**
+<img src="./public/icon.png" width="128">
 
-Allama is an open-source ChatGPT-like desktop client built around Ollama, providing similar features but entirely local. It leverages local LLM models like Llama 3, Qwen2, Phi3, etc. via Ollama, ensuring privacy and offline capability.
+**Allama: Ollama Desktop Client based on [Ollamate](https://github.com/humangems/ollamate) for Everyday Use**
+
+Allama is an open-source ChatGPT-like desktop client based on [Ollamate](https://github.com/humangems/ollamate) built around Ollama, providing similar features but entirely local. It leverages local LLM models like Llama 3, Qwen2, Phi3, etc. via Ollama, ensuring privacy and offline capability.
+
+![alt text](./public/image.png)
+
+![alt text](./public/image-1.png)
 
 ## Features
 
 - **Local LLM Models**: Use opensource LLMs locally like Llama 3, Qwen2, and Phi3
-- **User-Friendly**: Simple binary download for end users with Ollama installed (Apple Silicon Mac for now. Windows and Linux later).
+- **Model Management**: You can install and uninstall Ollama models on Allama
+- **User-Friendly**: Simple binary download for end users with Ollama installed (Windows Only).
 - **Developer-Friendly**: Open-source and ready for contributions on GitHub.
 
 ## Installation
