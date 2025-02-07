@@ -8,7 +8,7 @@ import { useAppSelector } from "../redux/store";
 import clsx from "clsx";
 import SidebarActions from "../components/SidebarActions";
 import RenameDialog from "../components/chat/RenameDialog";
-import OllamaIcon from "../components/icons/logo.svg";
+import OllamaIcon from "../components/icons/icon.png";
 
 export default function RootPage() {
   const isFullscreen = useAppSelector((state) => state.ui.isFullscreen);
@@ -21,13 +21,8 @@ export default function RootPage() {
             <Outlet />
           </div>
         </div>
-        <div
-          className={clsx(
-            "absolute h-[52px] flex items-center no-drag-region z-10 top-0",
-            isFullscreen ? "left-4" : "left-[15px]"
-          )}
-        >
-          <img src={OllamaIcon} width={20} className="mr-5" />
+        <div className={clsx("absolute h-[52px] flex items-center no-drag-region z-10 top-0", isFullscreen ? "left-4" : "left-[15px]")}>
+          <img src={OllamaIcon} width={35} className="mr-5" />
           <SidebarActions />
         </div>
       </div>
