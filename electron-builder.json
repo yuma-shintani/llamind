@@ -1,8 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
-  "appId": "Allama",
+  "appId": "Llamind",
   "asar": true,
-  "productName": "Allama",
+  "productName": "Llamind",
   "directories": {
     "output": "release/${version}"
   },
@@ -10,7 +10,7 @@
   "mac": {
     "target": ["dmg"],
     "icon": "dist/icon.ico",
-    "artifactName": "allama-${version}.${ext}"
+    "artifactName": "llamind-${version}.${ext}"
   },
   "dmg": {},
   "win": {
@@ -22,7 +22,7 @@
       },
       "zip"
     ],
-    "artifactName": "allama-${version}.${ext}"
+    "artifactName": "llamind-${version}.${ext}"
   },
   "nsis": {
     "oneClick": true,

@@ -1,10 +1,10 @@
-# Allama
+# Llamind
 
 <img src="./public/icon.png" width="128">
 
-**Allama: Ollama Desktop Client based on [Ollamate](https://github.com/humangems/ollamate) for Everyday Use**
+**Llamind: Ollama Desktop Client based on [Ollamate](https://github.com/humangems/ollamate) for Everyday Use**
 
-Allama is an open-source ChatGPT-like desktop client based on [Ollamate](https://github.com/humangems/ollamate) built around Ollama, providing similar features but entirely local. It leverages local LLM models like Llama 3, Qwen2, Phi3, etc. via Ollama, ensuring privacy and offline capability.
+Llamind is an open-source ChatGPT-like desktop client based on [Ollamate](https://github.com/humangems/ollamate) built around Ollama, providing similar features but entirely local. It leverages local LLM models like Llama 3, Qwen2, Phi3, etc. via Ollama, ensuring privacy and offline capability.
 
 ![alt text](./public/image.png)
 
@@ -13,7 +13,7 @@ Allama is an open-source ChatGPT-like desktop client based on [Ollamate](https:/
 ## Features
 
 - **Local LLM Models**: Use opensource LLMs locally like Llama 3, Qwen2, and Phi3
-- **Model Management**: You can install and uninstall Ollama models on Allama
+- **Model Management**: You can install and uninstall Ollama models on Llamind
 - **User-Friendly**: Simple binary download for end users with Ollama installed (Windows Only).
 - **Developer-Friendly**: Open-source and ready for contributions on GitHub.
 
@@ -22,7 +22,7 @@ Allama is an open-source ChatGPT-like desktop client based on [Ollamate](https:/
 ### For End Users
 
 1. Ensure you have [Ollama](https://ollama.com) installed on your system. Make sure you have at least one model downloaded. (For example, Run `ollama run phi3`)
-2. Download the Allama.
+2. Download the Llamind.
 3. Use it just like a normal app.
 
 ### For Developers
@@ -32,8 +32,8 @@ Allama is an open-source ChatGPT-like desktop client based on [Ollamate](https:/
 3. Install dependencies and run the app.
 
 ```bash
-git clone https://github.com/yuma-shintani/allama.git
-cd allama
+git clone https://github.com/yuma-shintani/llamind.git
+cd llamind
 npm run install
 npm run dev
 ```
@@ -64,7 +64,7 @@ For any inquiries or support, please open an issue on GitHub.
 
 ---
 
-Thank you for using Allama! We hope it enhances your local LLM experience.
+Thank you for using Llamind! We hope it enhances your local LLM experience.
 
 ## Acknowledgements
 

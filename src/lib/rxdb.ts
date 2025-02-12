@@ -7,7 +7,7 @@ import { nanoid } from "@reduxjs/toolkit";
 addRxPlugin(RxDBDevModePlugin);
 
 const db = await createRxDatabase({
-  name: "allama",
+  name: "llamind",
   storage: getRxStorageDexie(),
 });
 
