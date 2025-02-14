@@ -9,7 +9,7 @@
   "files": ["dist", "dist-electron"],
   "mac": {
     "target": ["dmg"],
-    "icon": "dist/icon.ico",
+    "icon": "dist/icon.icns",
     "artifactName": "llamind-${version}.${ext}"
   },
   "dmg": {},
