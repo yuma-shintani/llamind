@@ -36,7 +36,7 @@
     "copy-to-clipboard": "^3.3.3",
     "dayjs": "^1.11.11",
     "electron": "^35.7.5",
-    "electron-builder": "^25.1.8",
+    "electron-builder": "^26.7.0",
     "framer-motion": "^11.2.4",
     "lodash": "^4.17.21",
     "lodash-es": "^4.17.21",
