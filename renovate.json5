@@ -7,6 +7,30 @@
   groupName: "all dependencies",
   packageRules: [
     {
+      // plugin-react 6 requires Vite 8; keep 5.x while this project uses Vite 7.
+      matchManagers: ["npm"],
+      matchPackageNames: ["@vitejs/plugin-react"],
+      allowedVersions: "<6",
+    },
+    {
+      // The current PostCSS setup and Radix preset use Tailwind CSS 3 APIs.
+      matchManagers: ["npm"],
+      matchPackageNames: ["tailwindcss"],
+      allowedVersions: "<4",
+    },
+    {
+      // radix-themes-tw 1.x replaces the JS preset with Tailwind CSS 4 styles.
+      matchManagers: ["npm"],
+      matchPackageNames: ["radix-themes-tw"],
+      allowedVersions: "<1",
+    },
+    {
+      // Keep the Rollup-based Electron build while this project uses Vite 7.
+      matchManagers: ["npm"],
+      matchPackageNames: ["vite-plugin-electron"],
+      allowedVersions: "<1",
+    },
+    {
       // ts-jest supports TypeScript >=4.3 <7; revisit when it supports 7.
       matchManagers: ["npm"],
       matchPackageNames: ["typescript"],
