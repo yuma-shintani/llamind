@@ -31,10 +31,12 @@ Llamind is an open-source ChatGPT-like desktop client based on [Ollamate](https:
 2. Clone your forked repository to your local machine.
 3. Install dependencies and run the app.
 
+Use npm for dependency management. Commit `package-lock.json` when dependencies change.
+
 ```bash
 git clone https://github.com/yuma-shintani/llamind.git
 cd llamind
-npm run install
+npm ci
 npm run dev
 ```
 
