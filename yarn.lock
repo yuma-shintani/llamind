@@ -183,6 +183,7 @@
 "@electron/asar@^3.2.1", "@electron/asar@^3.3.1", "@electron/asar@3.4.1":
   version "3.4.1"
   resolved "https://registry.npmjs.org/@electron/asar/-/asar-3.4.1.tgz"
+  resolved "https://registry.npmjs.org/@electron/asar/-/asar-3.4.1.tgz"
   integrity sha512-i4/rNPRS84t0vSRa2HorerGRXWyF4vThfHesw0dmcWHp+cspK743UanA0suA5Q5y8kzY2y6YKrvbIUn69BCAiA==
   dependencies:
     commander "^5.0.0"
@@ -221,6 +222,7 @@
 "@electron/get@^3.0.0":
   version "3.1.0"
   resolved "https://registry.npmjs.org/@electron/get/-/get-3.1.0.tgz"
+  resolved "https://registry.npmjs.org/@electron/get/-/get-3.1.0.tgz"
   integrity sha512-F+nKc0xW+kVbBRhFzaMgPy3KwmuNTYX1fx6+FxxoSnNgwYX6LD7AKBTWkU0MQ6IBoe7dz069CNkR673sPAgkCQ==
   dependencies:
     debug "^4.1.1"
@@ -245,6 +247,7 @@
 "@electron/osx-sign@1.3.3":
   version "1.3.3"
   resolved "https://registry.npmjs.org/@electron/osx-sign/-/osx-sign-1.3.3.tgz"
+  resolved "https://registry.npmjs.org/@electron/osx-sign/-/osx-sign-1.3.3.tgz"
   integrity sha512-KZ8mhXvWv2rIEgMbWZ4y33bDHyUKMXnx4M0sTyPNK/vcB81ImdeY9Ggdqy0SWbMDgmbqyQ+phgejh6V3R2QuSg==
   dependencies:
     compare-version "^0.1.2"
@@ -264,10 +267,12 @@
     node-abi "^4.2.0"
     node-api-version "^0.2.1"
     node-gyp "^12.2.0"
+    node-gyp "^12.2.0"
     read-binary-file-arch "^1.0.6"
 
 "@electron/universal@2.0.3":
   version "2.0.3"
+  resolved "https://registry.npmjs.org/@electron/universal/-/universal-2.0.3.tgz"
   resolved "https://registry.npmjs.org/@electron/universal/-/universal-2.0.3.tgz"
   integrity sha512-Wn9sPYIVFRFl5HmwMJkARCCf7rqK/EurkfQ/rJZ14mHP3iYTjZSIOSVonEAnhWeAXwtw7zOekGRlc6yTtZ0t+g==
   dependencies:
@@ -324,6 +329,7 @@
 
 "@isaacs/fs-minipass@^4.0.0":
   version "4.0.1"
+  resolved "https://registry.npmjs.org/@isaacs/fs-minipass/-/fs-minipass-4.0.1.tgz"
   resolved "https://registry.npmjs.org/@isaacs/fs-minipass/-/fs-minipass-4.0.1.tgz"
   integrity sha512-wgm9Ehl2jpeqP3zw/7mo3kRHFp5MEDhqAdwy1fTGkHAwnkGOVsgpvQhL8B5n1qlb01jV3n/bI0ZfZp5lWA1k4w==
   dependencies:
@@ -386,6 +392,7 @@
   integrity sha512-p8cImC+VgKKKRc6HJGlFtGAKNbKyHtKyDIgNJeoqUBQ1beUfQlEh0I6lmTmWCzGlijVUE+GdNJWveNr0PQKRIw==
   dependencies:
     "@standard-schema/spec" "^1.1.0"
+    "@standard-schema/spec" "^1.1.0"
     fast-deep-equal "^3.1.3"
     klona "^2.0.6"
 
@@ -429,13 +436,14 @@
   resolved "https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-2.0.5.tgz"
   integrity sha512-RkhPPp2zrqDAQA/2jNhnztcPAlv64XdhIp7a7454A5ovI7Bukxgt7MX7udwAu3zg1DcpPU0rz3VV1SeaqvY4+A==
 
-"@nodelib/fs.walk@^1.2.3":
-  version "1.2.8"
-  resolved "https://registry.npmjs.org/@nodelib/fs.walk/-/fs.walk-1.2.8.tgz"
-  integrity sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==
+"@peculiar/asn1-schema@^2.7.0":
+  version "2.11.1"
+  resolved "https://registry.yarnpkg.com/@peculiar/asn1-schema/-/asn1-schema-2.11.1.tgz#cb6d532bed05326847f92a0c6b7bc76d7e7dfff6"
+  integrity sha512-jaU9OaCcbZUdyXx9hMETZB9xoNmxTGjOGFqd3cOwKFkpKnyKd9WxF3uqj4PvX4cyOMP9bSdHg5YyML2qtx/d/g==
   dependencies:
-    "@nodelib/fs.scandir" "2.1.5"
-    fastq "^1.6.0"
+    "@peculiar/utils" "^2.0.2"
+    asn1js "^3.0.10"
+    tslib "^2.8.1"
 
 "@peculiar/asn1-schema@^2.7.0":
   version "2.11.1"
@@ -470,6 +478,11 @@
     "@peculiar/utils" "^2.0.2"
     tslib "^2.8.1"
     webcrypto-core "^1.9.2"
+    "@peculiar/asn1-schema" "^2.7.0"
+    "@peculiar/json-schema" "^1.1.12"
+    "@peculiar/utils" "^2.0.2"
+    tslib "^2.8.1"
+    webcrypto-core "^1.9.2"
 
 "@radix-ui/colors@^3.0.0":
   version "3.0.0"
@@ -492,12 +505,22 @@
   integrity sha512-BB4+HHkFl3HipEAhm/mLhrpXV+2kRX7MvY4AaImUcQVeWQt5KhV1JEByNs8NGfJOcr95RcQGijt9+OrCo68xGA==
   dependencies:
     "@radix-ui/react-visually-hidden" "1.2.13"
+    "@radix-ui/react-visually-hidden" "1.2.13"
 
 "@radix-ui/react-accordion@1.3.1":
   version "1.3.1"
   resolved "https://registry.npmjs.org/@radix-ui/react-accordion/-/react-accordion-1.3.1.tgz"
   integrity sha512-lCZ6sbGS/7WO0j84yx4srIgOf0MRJ/sZ13RonADXxvKBym8xrxNCq5f6DibGcr38sIlwPk8/52uYdXeOPsbEDw==
   dependencies:
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-collapsible" "1.2.1"
+    "@radix-ui/react-collection" "1.2.0"
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-direction" "1.2.0"
+    "@radix-ui/react-id" "1.1.4"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-use-controllable-state" "1.3.0"
     "@radix-ui/primitive" "1.2.0"
     "@radix-ui/react-collapsible" "1.2.1"
     "@radix-ui/react-collection" "1.2.0"
@@ -518,6 +541,11 @@
     "@radix-ui/react-context" "1.3.0"
     "@radix-ui/react-dialog" "1.3.1"
     "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-dialog" "1.3.1"
+    "@radix-ui/react-primitive" "2.2.0"
 
 "@radix-ui/react-arrow@1.1.17":
   version "1.1.17"
@@ -525,12 +553,14 @@
   integrity sha512-67jjcVvxjXCCStnTW3Z+M7jmaFMuMR7M2JgpDzH4w7JSRrikmzhjfYgP/09ECb8n7whnsgh1ifJ+Ie96qEj+pQ==
   dependencies:
     "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-primitive" "2.2.0"
 
 "@radix-ui/react-aspect-ratio@1.2.0":
   version "1.2.0"
   resolved "https://registry.npmjs.org/@radix-ui/react-aspect-ratio/-/react-aspect-ratio-1.2.0.tgz"
   integrity sha512-gHEU+Lx8DlT/FYIjZQvvBJrFSwUngXTjh7FeL9QvJaNALDLez6pgDj2axCUihBjtPBy82LN0gNb25+sTcSXNmA==
   dependencies:
+    "@radix-ui/react-primitive" "2.2.0"
     "@radix-ui/react-primitive" "2.2.0"
 
 "@radix-ui/react-avatar@1.3.1":
@@ -544,12 +574,25 @@
     "@radix-ui/react-use-callback-ref" "1.1.5"
     "@radix-ui/react-use-is-hydrated" "0.1.3"
     "@radix-ui/react-use-layout-effect" "1.1.4"
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-use-callback-ref" "1.1.5"
+    "@radix-ui/react-use-is-hydrated" "0.1.3"
+    "@radix-ui/react-use-layout-effect" "1.1.4"
 
 "@radix-ui/react-checkbox@1.4.1":
   version "1.4.1"
   resolved "https://registry.npmjs.org/@radix-ui/react-checkbox/-/react-checkbox-1.4.1.tgz"
   integrity sha512-KWtwhh+98ML3seZ9vO9yRY2OwaQG90dCiDAxjpSNY2AaZ3Hik3B0dsk6m0ILywo/no3A9/SozadyPMNweVT8yw==
   dependencies:
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-presence" "1.1.11"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-use-controllable-state" "1.3.0"
+    "@radix-ui/react-use-size" "1.1.5"
     "@radix-ui/primitive" "1.2.0"
     "@radix-ui/react-compose-refs" "1.1.5"
     "@radix-ui/react-context" "1.3.0"
@@ -571,12 +614,25 @@
     "@radix-ui/react-primitive" "2.2.0"
     "@radix-ui/react-use-controllable-state" "1.3.0"
     "@radix-ui/react-use-layout-effect" "1.1.4"
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-id" "1.1.4"
+    "@radix-ui/react-presence" "1.1.11"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-use-controllable-state" "1.3.0"
+    "@radix-ui/react-use-layout-effect" "1.1.4"
 
 "@radix-ui/react-collection@1.2.0":
   version "1.2.0"
   resolved "https://registry.npmjs.org/@radix-ui/react-collection/-/react-collection-1.2.0.tgz"
   integrity sha512-+yiQzqcc7Sy7/5s0jrMCjpPRFB3538VNrXPWdTLZhE/SCfgEws4aI6lHWN/vvcnyhHndROWBzqmqB4QBrITZ9Q==
   dependencies:
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-slot" "1.5.0"
+    "@radix-ui/react-use-layout-effect" "1.1.4"
     "@radix-ui/react-compose-refs" "1.1.5"
     "@radix-ui/react-context" "1.3.0"
     "@radix-ui/react-primitive" "2.2.0"
@@ -593,6 +649,11 @@
   resolved "https://registry.npmjs.org/@radix-ui/react-context-menu/-/react-context-menu-2.4.1.tgz"
   integrity sha512-Pddn3Z8lio3/ChxyXaEP3jHTTo1LTHCWwF8+mG1chQlWijP+ttVHBKwezrQTiV6Mj670ojvumqvuGh+mdv33iQ==
   dependencies:
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-menu" "2.2.1"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-use-controllable-state" "1.3.0"
     "@radix-ui/primitive" "1.2.0"
     "@radix-ui/react-context" "1.3.0"
     "@radix-ui/react-menu" "2.2.1"
@@ -622,7 +683,21 @@
     "@radix-ui/react-slot" "1.5.0"
     "@radix-ui/react-use-controllable-state" "1.3.0"
     "@radix-ui/react-use-layout-effect" "1.1.4"
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-dismissable-layer" "1.2.1"
+    "@radix-ui/react-focus-guards" "1.2.0"
+    "@radix-ui/react-focus-scope" "1.3.1"
+    "@radix-ui/react-id" "1.1.4"
+    "@radix-ui/react-portal" "1.2.0"
+    "@radix-ui/react-presence" "1.1.11"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-slot" "1.5.0"
+    "@radix-ui/react-use-controllable-state" "1.3.0"
+    "@radix-ui/react-use-layout-effect" "1.1.4"
     aria-hidden "^1.2.4"
+    react-remove-scroll "^2.7.2"
     react-remove-scroll "^2.7.2"
 
 "@radix-ui/react-direction@1.2.0":
@@ -640,12 +715,24 @@
     "@radix-ui/react-primitive" "2.2.0"
     "@radix-ui/react-use-callback-ref" "1.1.5"
     "@radix-ui/react-use-effect-event" "0.0.5"
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-use-callback-ref" "1.1.5"
+    "@radix-ui/react-use-effect-event" "0.0.5"
 
 "@radix-ui/react-dropdown-menu@2.2.1":
   version "2.2.1"
   resolved "https://registry.npmjs.org/@radix-ui/react-dropdown-menu/-/react-dropdown-menu-2.2.1.tgz"
   integrity sha512-XsHcmYG2AcqnvTqrOXXWcMrhquEIlqucizuDH1MV/qMRW+DndpBCMvNeTRXOxqmG1H5j89M/+I0/34Zdd+zDcQ==
   dependencies:
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-id" "1.1.4"
+    "@radix-ui/react-menu" "2.2.1"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-use-controllable-state" "1.3.0"
     "@radix-ui/primitive" "1.2.0"
     "@radix-ui/react-compose-refs" "1.1.5"
     "@radix-ui/react-context" "1.3.0"
@@ -667,12 +754,21 @@
     "@radix-ui/react-compose-refs" "1.1.5"
     "@radix-ui/react-primitive" "2.2.0"
     "@radix-ui/react-use-callback-ref" "1.1.5"
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-use-callback-ref" "1.1.5"
 
 "@radix-ui/react-form@0.3.0":
   version "0.3.0"
   resolved "https://registry.npmjs.org/@radix-ui/react-form/-/react-form-0.3.0.tgz"
   integrity sha512-KnmrCM27m7Jo1R8S6cFDPrEeq20Jfn5dqde0SZrJr2lVXlj6/QZSUCyFoYh1d8ti0uUrMNK5Lx6dUDuINT+f4Q==
   dependencies:
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-id" "1.1.4"
+    "@radix-ui/react-label" "2.1.17"
+    "@radix-ui/react-primitive" "2.2.0"
     "@radix-ui/primitive" "1.2.0"
     "@radix-ui/react-compose-refs" "1.1.5"
     "@radix-ui/react-context" "1.3.0"
@@ -695,6 +791,16 @@
     "@radix-ui/react-presence" "1.1.11"
     "@radix-ui/react-primitive" "2.2.0"
     "@radix-ui/react-use-controllable-state" "1.3.0"
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-dismissable-layer" "1.2.1"
+    "@radix-ui/react-focus-scope" "1.3.1"
+    "@radix-ui/react-popper" "1.4.0"
+    "@radix-ui/react-portal" "1.2.0"
+    "@radix-ui/react-presence" "1.1.11"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-use-controllable-state" "1.3.0"
 
 "@radix-ui/react-id@1.1.4":
   version "1.1.4"
@@ -702,12 +808,14 @@
   integrity sha512-TMQp2llA+RYn7JcjnrMnz7wN4pcVttPZnRZo52PLQsoLVKzNlVwUeHmfePgTgRluXFvlD3GD5g5MOVVTJCO0qA==
   dependencies:
     "@radix-ui/react-use-layout-effect" "1.1.4"
+    "@radix-ui/react-use-layout-effect" "1.1.4"
 
 "@radix-ui/react-label@2.1.17":
   version "2.1.17"
   resolved "https://registry.npmjs.org/@radix-ui/react-label/-/react-label-2.1.17.tgz"
   integrity sha512-xmj7MN/drx1oUAXkfiFIvyDmGNUIN/omGobvA5oAoNqu9zO2MkISYGZOkBcqSzs/UZXXwV+/3ACRE7q7mGcmkA==
   dependencies:
+    "@radix-ui/react-primitive" "2.2.0"
     "@radix-ui/react-primitive" "2.2.0"
 
 "@radix-ui/react-menu@2.2.1":
@@ -731,7 +839,24 @@
     "@radix-ui/react-roving-focus" "1.2.1"
     "@radix-ui/react-slot" "1.5.0"
     "@radix-ui/react-use-callback-ref" "1.1.5"
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-collection" "1.2.0"
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-direction" "1.2.0"
+    "@radix-ui/react-dismissable-layer" "1.2.1"
+    "@radix-ui/react-focus-guards" "1.2.0"
+    "@radix-ui/react-focus-scope" "1.3.1"
+    "@radix-ui/react-id" "1.1.4"
+    "@radix-ui/react-popper" "1.4.0"
+    "@radix-ui/react-portal" "1.2.0"
+    "@radix-ui/react-presence" "1.1.11"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-roving-focus" "1.2.1"
+    "@radix-ui/react-slot" "1.5.0"
+    "@radix-ui/react-use-callback-ref" "1.1.5"
     aria-hidden "^1.2.4"
+    react-remove-scroll "^2.7.2"
     react-remove-scroll "^2.7.2"
 
 "@radix-ui/react-menubar@1.2.1":
@@ -749,12 +874,37 @@
     "@radix-ui/react-primitive" "2.2.0"
     "@radix-ui/react-roving-focus" "1.2.1"
     "@radix-ui/react-use-controllable-state" "1.3.0"
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-collection" "1.2.0"
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-direction" "1.2.0"
+    "@radix-ui/react-id" "1.1.4"
+    "@radix-ui/react-menu" "2.2.1"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-roving-focus" "1.2.1"
+    "@radix-ui/react-use-controllable-state" "1.3.0"
 
 "@radix-ui/react-navigation-menu@1.4.1":
   version "1.4.1"
   resolved "https://registry.npmjs.org/@radix-ui/react-navigation-menu/-/react-navigation-menu-1.4.1.tgz"
   integrity sha512-XPPZjkeyCSMNNvt0FyDv/PUauG7Ow4GwHQ/XZSwW36F/TS7rR4HFTsXH8ewLnXTOLn3x96/pmTPNQIVoTX/86g==
   dependencies:
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-collection" "1.2.0"
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-direction" "1.2.0"
+    "@radix-ui/react-dismissable-layer" "1.2.1"
+    "@radix-ui/react-id" "1.1.4"
+    "@radix-ui/react-presence" "1.1.11"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-slot" "1.5.0"
+    "@radix-ui/react-use-callback-ref" "1.1.5"
+    "@radix-ui/react-use-controllable-state" "1.3.0"
+    "@radix-ui/react-use-layout-effect" "1.1.4"
+    "@radix-ui/react-use-previous" "1.1.4"
+    "@radix-ui/react-visually-hidden" "1.2.13"
     "@radix-ui/primitive" "1.2.0"
     "@radix-ui/react-collection" "1.2.0"
     "@radix-ui/react-compose-refs" "1.1.5"
@@ -824,6 +974,7 @@
     "@radix-ui/react-use-layout-effect" "1.1.4"
     aria-hidden "^1.2.4"
     react-remove-scroll "^2.7.2"
+    react-remove-scroll "^2.7.2"
 
 "@radix-ui/react-popper@1.4.0":
   version "1.4.0"
@@ -831,6 +982,15 @@
   integrity sha512-yCWRvLeGv9Pz3+efwHqGPp70mZ56r3kfIgQVF56Oj2aAa4uP/Tb+IE59wNcc+758rctqbCKx4LbK8II/r7Bn0Q==
   dependencies:
     "@floating-ui/react-dom" "^2.0.0"
+    "@radix-ui/react-arrow" "1.1.17"
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-use-callback-ref" "1.1.5"
+    "@radix-ui/react-use-layout-effect" "1.1.4"
+    "@radix-ui/react-use-rect" "1.1.4"
+    "@radix-ui/react-use-size" "1.1.5"
+    "@radix-ui/rect" "1.1.3"
     "@radix-ui/react-arrow" "1.1.17"
     "@radix-ui/react-compose-refs" "1.1.5"
     "@radix-ui/react-context" "1.3.0"
@@ -848,6 +1008,8 @@
   dependencies:
     "@radix-ui/react-primitive" "2.2.0"
     "@radix-ui/react-use-layout-effect" "1.1.4"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-use-layout-effect" "1.1.4"
 
 "@radix-ui/react-presence@1.1.11":
   version "1.1.11"
@@ -855,12 +1017,14 @@
   integrity sha512-Z7/atlkab36Z8hm+V8zYc79r0W+tiOB1o0tun1By94JyadkekLQmtEAnBSP9XKXBNQsStoStS4+gX10JpS5akA==
   dependencies:
     "@radix-ui/react-use-layout-effect" "1.1.4"
+    "@radix-ui/react-use-layout-effect" "1.1.4"
 
 "@radix-ui/react-primitive@2.2.0":
   version "2.2.0"
   resolved "https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.2.0.tgz"
   integrity sha512-HCTSPMNqv55Qk0IX4geJbpyXazmqulcimwuyjxTkKi29v+QZbG2Zho9BnbBq4YS2PF+KlNb2CXoLz66uUmblkg==
   dependencies:
+    "@radix-ui/react-slot" "1.5.0"
     "@radix-ui/react-slot" "1.5.0"
 
 "@radix-ui/react-progress@1.2.1":
@@ -870,12 +1034,23 @@
   dependencies:
     "@radix-ui/react-context" "1.3.0"
     "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-primitive" "2.2.0"
 
 "@radix-ui/react-radio-group@1.5.1":
   version "1.5.1"
   resolved "https://registry.npmjs.org/@radix-ui/react-radio-group/-/react-radio-group-1.5.1.tgz"
   integrity sha512-QbyVT1ddnjqB9H+CUYKkNWdU9fIK3QHCYtjf7mS6ekSqiuXkWtWn5UZW9mhA8qtl3vrVyIsmR9gePstAtKrqkw==
   dependencies:
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-direction" "1.2.0"
+    "@radix-ui/react-presence" "1.1.11"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-roving-focus" "1.2.1"
+    "@radix-ui/react-use-controllable-state" "1.3.0"
+    "@radix-ui/react-use-size" "1.1.5"
     "@radix-ui/primitive" "1.2.0"
     "@radix-ui/react-compose-refs" "1.1.5"
     "@radix-ui/react-context" "1.3.0"
@@ -918,6 +1093,16 @@
     "@radix-ui/react-slot" "1.5.0"
     "@radix-ui/react-use-callback-ref" "1.1.5"
     "@radix-ui/react-use-layout-effect" "1.1.4"
+    "@radix-ui/number" "1.1.3"
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-direction" "1.2.0"
+    "@radix-ui/react-presence" "1.1.11"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-slot" "1.5.0"
+    "@radix-ui/react-use-callback-ref" "1.1.5"
+    "@radix-ui/react-use-layout-effect" "1.1.4"
 
 "@radix-ui/react-select@2.4.1":
   version "2.4.1"
@@ -943,7 +1128,27 @@
     "@radix-ui/react-use-controllable-state" "1.3.0"
     "@radix-ui/react-use-layout-effect" "1.1.4"
     "@radix-ui/react-visually-hidden" "1.2.13"
+    "@radix-ui/number" "1.1.3"
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-collection" "1.2.0"
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-direction" "1.2.0"
+    "@radix-ui/react-dismissable-layer" "1.2.1"
+    "@radix-ui/react-focus-guards" "1.2.0"
+    "@radix-ui/react-focus-scope" "1.3.1"
+    "@radix-ui/react-id" "1.1.4"
+    "@radix-ui/react-popper" "1.4.0"
+    "@radix-ui/react-portal" "1.2.0"
+    "@radix-ui/react-presence" "1.1.11"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-slot" "1.5.0"
+    "@radix-ui/react-use-callback-ref" "1.1.5"
+    "@radix-ui/react-use-controllable-state" "1.3.0"
+    "@radix-ui/react-use-layout-effect" "1.1.4"
+    "@radix-ui/react-visually-hidden" "1.2.13"
     aria-hidden "^1.2.4"
+    react-remove-scroll "^2.7.2"
     react-remove-scroll "^2.7.2"
 
 "@radix-ui/react-separator@1.2.0":
@@ -951,6 +1156,7 @@
   resolved "https://registry.npmjs.org/@radix-ui/react-separator/-/react-separator-1.2.0.tgz"
   integrity sha512-1jUAap0wZEqVP05Ou7kJgRxe/W+Qftng+rUNWGa0qkKbv9r5pWTG3E7a3ELKo2eJoHKMECnzuYrZpSyO1YgcYQ==
   dependencies:
+    "@radix-ui/react-primitive" "2.2.0"
     "@radix-ui/react-primitive" "2.2.0"
 
 "@radix-ui/react-slider@1.6.1":
@@ -968,12 +1174,23 @@
     "@radix-ui/react-use-controllable-state" "1.3.0"
     "@radix-ui/react-use-layout-effect" "1.1.4"
     "@radix-ui/react-use-size" "1.1.5"
+    "@radix-ui/number" "1.1.3"
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-collection" "1.2.0"
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-direction" "1.2.0"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-use-controllable-state" "1.3.0"
+    "@radix-ui/react-use-layout-effect" "1.1.4"
+    "@radix-ui/react-use-size" "1.1.5"
 
 "@radix-ui/react-slot@1.5.0":
   version "1.5.0"
   resolved "https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.5.0.tgz"
   integrity sha512-tyYd9ddPXAysAbdbD9eYxgwpCSv6f3PncqVSNKQFSR5lcJVLz3cb/pANDoYrLiHBpXv7skortyUgGUWsYuPPFQ==
   dependencies:
+    "@radix-ui/react-compose-refs" "1.1.5"
     "@radix-ui/react-compose-refs" "1.1.5"
 
 "@radix-ui/react-switch@1.4.1":
@@ -987,12 +1204,26 @@
     "@radix-ui/react-primitive" "2.2.0"
     "@radix-ui/react-use-controllable-state" "1.3.0"
     "@radix-ui/react-use-size" "1.1.5"
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-use-controllable-state" "1.3.0"
+    "@radix-ui/react-use-size" "1.1.5"
 
 "@radix-ui/react-tabs@1.2.1":
   version "1.2.1"
   resolved "https://registry.npmjs.org/@radix-ui/react-tabs/-/react-tabs-1.2.1.tgz"
   integrity sha512-hRoJlode+hg5ZNlR+3tkfkUliIybdTpD5lkAvHQ9yaXseGf7XVO9Ib2GPEIOuaJJbo7YWYbNpDDRfo8Dhf6/xA==
   dependencies:
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-direction" "1.2.0"
+    "@radix-ui/react-id" "1.1.4"
+    "@radix-ui/react-presence" "1.1.11"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-roving-focus" "1.2.1"
+    "@radix-ui/react-use-controllable-state" "1.3.0"
     "@radix-ui/primitive" "1.2.0"
     "@radix-ui/react-context" "1.3.0"
     "@radix-ui/react-direction" "1.2.0"
@@ -1019,12 +1250,31 @@
     "@radix-ui/react-use-controllable-state" "1.3.0"
     "@radix-ui/react-use-layout-effect" "1.1.4"
     "@radix-ui/react-visually-hidden" "1.2.13"
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-collection" "1.2.0"
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-dismissable-layer" "1.2.1"
+    "@radix-ui/react-portal" "1.2.0"
+    "@radix-ui/react-presence" "1.1.11"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-use-callback-ref" "1.1.5"
+    "@radix-ui/react-use-controllable-state" "1.3.0"
+    "@radix-ui/react-use-layout-effect" "1.1.4"
+    "@radix-ui/react-visually-hidden" "1.2.13"
 
 "@radix-ui/react-toggle-group@1.2.1":
   version "1.2.1"
   resolved "https://registry.npmjs.org/@radix-ui/react-toggle-group/-/react-toggle-group-1.2.1.tgz"
   integrity sha512-O8Ldx5ao4p4KoW+DO8/PmkOe5mdKNi3F2SseqjVj88wvDGDHe60cUmO0Zm/uHsKrvNgQGV8Efpuh95Tht/h4vw==
   dependencies:
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-direction" "1.2.0"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-roving-focus" "1.2.1"
+    "@radix-ui/react-toggle" "1.2.1"
+    "@radix-ui/react-use-controllable-state" "1.3.0"
     "@radix-ui/primitive" "1.2.0"
     "@radix-ui/react-context" "1.3.0"
     "@radix-ui/react-direction" "1.2.0"
@@ -1041,12 +1291,22 @@
     "@radix-ui/primitive" "1.2.0"
     "@radix-ui/react-primitive" "2.2.0"
     "@radix-ui/react-use-controllable-state" "1.3.0"
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-use-controllable-state" "1.3.0"
 
 "@radix-ui/react-toolbar@1.2.1":
   version "1.2.1"
   resolved "https://registry.npmjs.org/@radix-ui/react-toolbar/-/react-toolbar-1.2.1.tgz"
   integrity sha512-Cm8m7JTEeUdbfA6T9xgyu8HfOpyvSx8pB/wj0DlEuWaJe9FilIs4Az9wci/lU9RbthV/UkltszMw5WnnD+m/Ug==
   dependencies:
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-direction" "1.2.0"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-roving-focus" "1.2.1"
+    "@radix-ui/react-separator" "1.2.0"
+    "@radix-ui/react-toggle-group" "1.2.1"
     "@radix-ui/primitive" "1.2.0"
     "@radix-ui/react-context" "1.3.0"
     "@radix-ui/react-direction" "1.2.0"
@@ -1074,6 +1334,20 @@
     "@radix-ui/react-use-controllable-state" "1.3.0"
     "@radix-ui/react-use-layout-effect" "1.1.4"
     "@radix-ui/react-visually-hidden" "1.2.13"
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-dismissable-layer" "1.2.1"
+    "@radix-ui/react-focus-scope" "1.3.1"
+    "@radix-ui/react-id" "1.1.4"
+    "@radix-ui/react-popper" "1.4.0"
+    "@radix-ui/react-portal" "1.2.0"
+    "@radix-ui/react-presence" "1.1.11"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-slot" "1.5.0"
+    "@radix-ui/react-use-controllable-state" "1.3.0"
+    "@radix-ui/react-use-layout-effect" "1.1.4"
+    "@radix-ui/react-visually-hidden" "1.2.13"
 
 "@radix-ui/react-use-callback-ref@1.1.5":
   version "1.1.5"
@@ -1087,6 +1361,9 @@
   resolved "https://registry.npmjs.org/@radix-ui/react-use-controllable-state/-/react-use-controllable-state-1.3.0.tgz"
   integrity sha512-TAcBI7bw2ljYCbv4+zuTSd6zICu8pRt6SDN2vJ/Z06K2MXh6I9WYFe/A9ovlFDtR5HVHGm5iDxDoABm/++dbKg==
   dependencies:
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-use-effect-event" "0.0.5"
+    "@radix-ui/react-use-layout-effect" "1.1.4"
     "@radix-ui/primitive" "1.2.0"
     "@radix-ui/react-use-effect-event" "0.0.5"
     "@radix-ui/react-use-layout-effect" "1.1.4"
@@ -1126,6 +1403,7 @@
   integrity sha512-cSOCh6JlkmfjLyNcLiu2nB4v+nm+dkZ+Q5KHWk/soo4U7ZLiEQFKHK9/YmtBHjfCEaU43IBKQOc4/uJmCaiCTQ==
   dependencies:
     "@radix-ui/rect" "1.1.3"
+    "@radix-ui/rect" "1.1.3"
 
 "@radix-ui/react-use-size@1.1.5":
   version "1.1.5"
@@ -1133,12 +1411,14 @@
   integrity sha512-V1McDQkMGzgivwqdu7u96APs7oi0Jvj9LTzgq3WWrDZqxWdAqU9yZnZQqk5OizGFR8badUQwZsrlao7MOlWYOA==
   dependencies:
     "@radix-ui/react-use-layout-effect" "1.1.4"
+    "@radix-ui/react-use-layout-effect" "1.1.4"
 
 "@radix-ui/react-visually-hidden@1.2.13":
   version "1.2.13"
   resolved "https://registry.npmjs.org/@radix-ui/react-visually-hidden/-/react-visually-hidden-1.2.13.tgz"
   integrity sha512-feijiN1oPk4rck4u9Dm9tsU4mT6Wp9oeEEhaz1WUEs1VuqLf8xzsFG+Qk+uWq6TnMH9O+WRECRg0NftyP9E4Fw==
   dependencies:
+    "@radix-ui/react-primitive" "2.2.0"
     "@radix-ui/react-primitive" "2.2.0"
 
 "@radix-ui/rect@1.1.3":
@@ -1154,6 +1434,7 @@
     "@radix-ui/colors" "^3.0.0"
     classnames "^2.3.2"
     radix-ui "^1.1.3"
+    radix-ui "^1.1.3"
     react-remove-scroll-bar "^2.3.8"
 
 "@reduxjs/toolkit@^2.13.0":
@@ -1161,6 +1442,9 @@
   resolved "https://registry.npmjs.org/@reduxjs/toolkit/-/toolkit-2.13.0.tgz"
   integrity sha512-f6jwVRfwW30+tnllz4YcsHHpPYYOE7abcHkyUCovD+P7DyhdAI5prz2Fh/8TLhakjpN+7aIEion1s5L/tvlYlA==
   dependencies:
+    "@standard-schema/spec" "^1.0.0"
+    "@standard-schema/utils" "^0.3.0"
+    immer "^11.0.0"
     "@standard-schema/spec" "^1.0.0"
     "@standard-schema/utils" "^0.3.0"
     immer "^11.0.0"
@@ -1369,7 +1653,7 @@
   resolved "https://registry.npmjs.org/@types/node/-/node-22.20.5.tgz"
   integrity sha512-U2+DNr+wSjpsTS/wZGYHq7GcwfuSmKiKvoPvK22zwTlRhU91yOniN4qRR5KhIjvif7ysw/dz/hKmfDH0Ris4aA==
   dependencies:
-    undici-types "~6.21.0"
+    undici-types "~7.8.0"
 
 "@types/react-dom@*", "@types/react-dom@^19.3.0":
   version "19.3.0"
@@ -1381,6 +1665,7 @@
   resolved "https://registry.npmjs.org/@types/react/-/react-19.3.0.tgz"
   integrity sha512-N0rFCuH9YoxG9/m61l9MfpJKfmLOVU0em7ipIz6TRgSSkvReLB9vL85GB+yr8Bs5leqpvg96JSwF4ZS1s4viQg==
   dependencies:
+    csstype "^3.2.2"
     csstype "^3.2.2"
 
 "@types/responselike@^1.0.0":
@@ -1516,14 +1801,21 @@ app-builder-lib@26.18.0:
     "@electron/notarize" "2.5.0"
     "@electron/osx-sign" "1.3.3"
     "@electron/rebuild" "^4.2.1"
+    "@electron/rebuild" "^4.2.1"
     "@electron/universal" "2.0.3"
     "@malept/flatpak-bundler" "^0.4.0"
+    "@noble/hashes" "^1.8.0"
+    "@peculiar/webcrypto" "^1.7.1"
     "@noble/hashes" "^1.8.0"
     "@peculiar/webcrypto" "^1.7.1"
     "@types/fs-extra" "9.0.13"
     ajv "^8.18.0"
     asn1js "^3.0.10"
+    ajv "^8.18.0"
+    asn1js "^3.0.10"
     async-exit-hook "^2.0.1"
+    builder-util "26.16.0"
+    builder-util-runtime "9.7.0"
     builder-util "26.16.0"
     builder-util-runtime "9.7.0"
     chromium-pickle-js "^0.2.0"
@@ -1532,6 +1824,7 @@ app-builder-lib@26.18.0:
     dotenv "^16.4.5"
     dotenv-expand "^11.0.6"
     ejs "^3.1.8"
+    electron-publish "26.18.0"
     electron-publish "26.18.0"
     fs-extra "^10.1.0"
     hosted-git-info "^4.1.0"
@@ -1542,6 +1835,8 @@ app-builder-lib@26.18.0:
     lazy-val "^1.0.5"
     minimatch "^10.2.5"
     pkijs "^3.4.0"
+    minimatch "^10.2.5"
+    pkijs "^3.4.0"
     plist "3.1.0"
     proper-lockfile "^4.1.2"
     resedit "^1.7.0"
@@ -1550,12 +1845,8 @@ app-builder-lib@26.18.0:
     temp-file "^3.4.0"
     tiny-async-pool "1.3.0"
     unzipper "^0.12.3"
+    unzipper "^0.12.3"
     which "^5.0.0"
-
-arg@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.npmjs.org/arg/-/arg-5.0.2.tgz"
-  integrity sha512-PYjyFOLKQ9y57JvQ6QLo8dAgNqswh8M1RMJYdQduT6xbWSgK36P/Z/v+p888pM69jMMfS8Xd8F6I1kQ/I9HUGg==
 
 argparse@^2.0.1:
   version "2.0.1"
@@ -1594,6 +1885,7 @@ async-exit-hook@^2.0.1:
   integrity sha512-NW2cX8m1Q7KPA7a5M2ULQeZ2wR5qI5PAbw5L0UOMxdioVk9PMZ0h1TmyZEkPYrCvYjDlFICusOu1dlEKAAeXBw==
 
 async@^3.2.6:
+async@^3.2.6:
   version "3.2.6"
   resolved "https://registry.npmjs.org/async/-/async-3.2.6.tgz"
   integrity sha512-htCUDlxyyCLMgaM3xXg0C0LW2xqfuQ6p05pCEIsXuyQ+a1koYKTuBMzRNwmybfLgvJDMd0r1LTn4+E0Ti6C2AA==
@@ -1615,12 +1907,18 @@ atomically@^2.1.1:
   dependencies:
     stubborn-fs "^2.0.0"
     when-exit "^2.1.4"
+    stubborn-fs "^2.0.0"
+    when-exit "^2.1.4"
 
 autoprefixer@^10.6.1:
   version "10.6.2"
   resolved "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.6.2.tgz"
   integrity sha512-VOw9/yGTGwPPgzFcODtcv6zhEPIeIWkRSe10L2ri2f5vZ7ID7lCt6jZzRF5/ubgOZ+szYydmEF5AYsA5jxX1tA==
   dependencies:
+    browserslist "^4.28.9"
+    caniuse-lite "^1.0.30001810"
+    fraction.js "^5.3.4"
+    picocolors "^1.1.1"
     browserslist "^4.28.9"
     caniuse-lite "^1.0.30001810"
     fraction.js "^5.3.4"
@@ -1711,13 +2009,15 @@ braces@^3.0.3, braces@~3.0.2:
   resolved "https://registry.npmjs.org/braces/-/braces-3.0.3.tgz"
   integrity sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==
   dependencies:
-    fill-range "^7.1.1"
+    balanced-match "^4.0.2"
 
 broadcast-channel@7.4.0:
   version "7.4.0"
   resolved "https://registry.npmjs.org/broadcast-channel/-/broadcast-channel-7.4.0.tgz"
   integrity sha512-Oe0EdXTN+BjH0QatATL1tnK0Qs9aKMSML59nYKOJ8Jk6IMT9Y2O+bJGU6MEA9tD7onvj5HnrwQf8fCzXEBcbDQ==
   dependencies:
+    "@babel/runtime" "7.29.7"
+    oblivious-set "2.0.0"
     "@babel/runtime" "7.29.7"
     oblivious-set "2.0.0"
     p-queue "6.6.2"
@@ -1728,6 +2028,11 @@ browserslist@^4.24.0, browserslist@^4.28.9, "browserslist@>= 4.21.0":
   resolved "https://registry.npmjs.org/browserslist/-/browserslist-4.29.5.tgz"
   integrity sha512-khTmKu5NGYTotqcYo8Bew2k4RAE9PuXRSFRXG2lQBrCEQHyeQ/vX6gKMxfokwywBsLiXZMnHsmWMG1pnO8J7uQ==
   dependencies:
+    baseline-browser-mapping "^2.11.33"
+    caniuse-lite "^1.0.30001819"
+    electron-to-chromium "^1.5.464"
+    node-releases "^2.0.60"
+    update-browserslist-db "^1.3.4"
     baseline-browser-mapping "^2.11.33"
     caniuse-lite "^1.0.30001819"
     electron-to-chromium "^1.5.464"
@@ -1766,6 +2071,7 @@ builder-util@26.16.0:
   integrity sha512-RLyJhB7Si3YkzKR9ubQslWuXW3Vhs3CGe1i+SeixBZ0qTd1mk3XBmssvY22TlB6CS5blyko8Gu1JzpYk8UkYAg==
   dependencies:
     "@types/debug" "^4.1.6"
+    builder-util-runtime "9.7.0"
     builder-util-runtime "9.7.0"
     chalk "^4.1.2"
     cross-spawn "^7.0.6"
@@ -1827,6 +2133,7 @@ ccount@^2.0.0:
   integrity sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==
 
 chalk@^4.1.1, chalk@^4.1.2:
+chalk@^4.1.1, chalk@^4.1.2:
   version "4.1.2"
   resolved "https://registry.npmjs.org/chalk/-/chalk-4.1.2.tgz"
   integrity sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
@@ -1872,6 +2179,7 @@ chokidar@^3.6.0:
 chownr@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/chownr/-/chownr-3.0.0.tgz"
+  resolved "https://registry.npmjs.org/chownr/-/chownr-3.0.0.tgz"
   integrity sha512-+IxzY9BZOQd/XuYPRmrvEVjF/nqj5kgT4kEq7VofrDoM1MxoRjEWkrCC3EtLi59TVawxTAn+orJwFQcrqEN1+g==
 
 chromium-pickle-js@^0.2.0:
@@ -1881,6 +2189,7 @@ chromium-pickle-js@^0.2.0:
 
 ci-info@^4.2.0:
   version "4.4.0"
+  resolved "https://registry.npmjs.org/ci-info/-/ci-info-4.4.0.tgz"
   resolved "https://registry.npmjs.org/ci-info/-/ci-info-4.4.0.tgz"
   integrity sha512-77PSwercCZU2Fc4sX94eF8k8Pxte6JAwL4/ICZLFjJLqegs7kCuAsqqj/70NQF6TvDpgFjkubQB2FW2ZZddvQg==
 
@@ -1990,7 +2299,9 @@ conf@^16.0.0:
   integrity sha512-CwqpY9jSpU6uYeObCwfRGqiEsd/DnU7rruwiFNapZPsOB8p2U65p+MzccEsdvg+KLis1Y1d1Mo3rKkTTzWONSA==
   dependencies:
     ajv "^8.20.0"
+    ajv "^8.20.0"
     ajv-formats "^3.0.1"
+    atomically "^2.1.1"
     atomically "^2.1.1"
     debounce-fn "^6.0.0"
     dot-prop "^10.2.0"
@@ -1998,11 +2309,16 @@ conf@^16.0.0:
     json-schema-typed "^8.0.2"
     semver "^7.8.5"
     uint8array-extras "^1.5.0"
+    dot-prop "^10.2.0"
+    env-paths "^4.0.0"
+    json-schema-typed "^8.0.2"
+    semver "^7.8.5"
+    uint8array-extras "^1.5.0"
 
-convert-source-map@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/convert-source-map/-/convert-source-map-2.0.0.tgz"
-  integrity sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==
+confbox@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/confbox/-/confbox-0.1.8.tgz#820d73d3b3c82d9bd910652c5d4d599ef8ff8b06"
+  integrity sha512-RMtmw0iFkeR4YV+fUOSucriAQNb9g8zFR52MWCtl+cCZOFRNL6zeB395vPzFhEjjn4fMxXudmELnl/KF/WrK6w==
 
 copy-to-clipboard@^4.0.2:
   version "4.0.2"
@@ -2099,6 +2415,7 @@ defer-to-connect@^2.0.0:
   integrity sha512-4tvttepXG1VaYGrRibk5EwJd1t4udunSOVMdLSAL6mId1ix438oPwPZMALY41FCijukO1L0twNcGsdzS7dHgDg==
 
 define-data-property@^1.0.1:
+define-data-property@^1.0.1:
   version "1.1.4"
   resolved "https://registry.npmjs.org/define-data-property/-/define-data-property-1.1.4.tgz"
   integrity sha512-rBMvIzlpA8v6E+SJZoo++HAYqsLrkg7MSfIinMPFhmkorw7X+dOXVJQs+QT69zGkzMyfDnIMN2Wid1+NbL3T+A==
@@ -2173,6 +2490,8 @@ dmg-builder@26.18.0:
   dependencies:
     app-builder-lib "26.18.0"
     builder-util "26.16.0"
+    app-builder-lib "26.18.0"
+    builder-util "26.16.0"
     fs-extra "^10.1.0"
     js-yaml "^4.1.0"
 
@@ -2181,6 +2500,7 @@ dot-prop@^10.2.0:
   resolved "https://registry.npmjs.org/dot-prop/-/dot-prop-10.2.0.tgz"
   integrity sha512-BTJ9aZYL3vCfZlZOBLy9v8TUqWGQ0pzFnygKwFZt5udj6viBoFIBviKPUoZLDCPn1FoXffv6McQFDenrm5Krfw==
   dependencies:
+    type-fest "^5.0.0"
     type-fest "^5.0.0"
 
 dotenv-expand@^11.0.6:
@@ -2191,6 +2511,9 @@ dotenv-expand@^11.0.6:
     dotenv "^16.4.5"
 
 dotenv@^16.4.5:
+  version "16.6.1"
+  resolved "https://registry.npmjs.org/dotenv/-/dotenv-16.6.1.tgz"
+  integrity sha512-uBq4egWHTcTt33a72vpSG0z3HnPuIl6NqYcTrKEg2azoEyl2hpW0zqlxysq2pK9HlDIHyHyakeYaYnSAwd8bow==
   version "16.6.1"
   resolved "https://registry.npmjs.org/dotenv/-/dotenv-16.6.1.tgz"
   integrity sha512-uBq4egWHTcTt33a72vpSG0z3HnPuIl6NqYcTrKEg2azoEyl2hpW0zqlxysq2pK9HlDIHyHyakeYaYnSAwd8bow==
@@ -2238,6 +2561,7 @@ electron-builder@^26.18.0:
     chalk "^4.1.2"
     ci-info "^4.2.0"
     dmg-builder "26.18.0"
+    dmg-builder "26.18.0"
     fs-extra "^10.1.0"
     lazy-val "^1.0.5"
     simple-update-notifier "2.0.0"
@@ -2249,6 +2573,9 @@ electron-publish@26.18.0:
   integrity sha512-MagnqaZSALSWjcdKu5HEVhYUZD/2BDL3q7XzrqWwub6gf/UfD3ItMgmthVDv9w5y9E0gH1C3JWqKaXwf6f4ROg==
   dependencies:
     "@types/fs-extra" "^9.0.11"
+    aws4 "^1.13.2"
+    builder-util "26.16.0"
+    builder-util-runtime "9.7.0"
     aws4 "^1.13.2"
     builder-util "26.16.0"
     builder-util-runtime "9.7.0"
@@ -2272,6 +2599,8 @@ electron-store@^12.0.0:
   dependencies:
     conf "^16.0.0"
     type-fest "^5.10.0"
+    conf "^16.0.0"
+    type-fest "^5.10.0"
 
 electron-to-chromium@^1.5.464:
   version "1.5.472"
@@ -2293,6 +2622,7 @@ electron-winstaller@5.4.0:
 
 electron@^35.7.5:
   version "35.7.5"
+  resolved "https://registry.npmjs.org/electron/-/electron-35.7.5.tgz"
   resolved "https://registry.npmjs.org/electron/-/electron-35.7.5.tgz"
   integrity sha512-dnL+JvLraKZl7iusXTVTGYs10TKfzUi30uEDTqsmTm0guN9V2tbOjTzyIZbh9n3ygUjgEYyo+igAwMRXIi3IPw==
   dependencies:
@@ -2435,6 +2765,8 @@ event-reduce-js@6.0.0:
   dependencies:
     array-push-at-sort-position "5.0.0"
     binary-decision-diagram "4.0.0"
+    array-push-at-sort-position "5.0.0"
+    binary-decision-diagram "4.0.0"
 
 eventemitter3@^4.0.4:
   version "4.0.7"
@@ -2462,6 +2794,7 @@ extract-zip@^2.0.1:
   optionalDependencies:
     "@types/yauzl" "^2.9.1"
 
+fast-deep-equal@^3.1.3:
 fast-deep-equal@^3.1.3:
   version "3.1.3"
   resolved "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz"
@@ -2500,6 +2833,7 @@ fd-slicer@~1.1.0:
 fdir@^6.5.0:
   version "6.5.0"
   resolved "https://registry.npmjs.org/fdir/-/fdir-6.5.0.tgz"
+  resolved "https://registry.npmjs.org/fdir/-/fdir-6.5.0.tgz"
   integrity sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==
 
 filelist@^1.0.4:
@@ -2537,6 +2871,8 @@ framer-motion@^14.6.0:
   resolved "https://registry.npmjs.org/framer-motion/-/framer-motion-14.9.0.tgz"
   integrity sha512-g1hZu8WoTwgsoVAaqEEcefhvR03cKGtkmrKaRrWpXhnM3LGR8jl1u2qyJ1PMVlO7LKQHE8TTRQYUlMmnrY4L+g==
   dependencies:
+    motion-dom "14.9.0"
+    motion-utils "14.7.0"
     motion-dom "14.9.0"
     motion-utils "14.7.0"
     tslib "^2.4.0"
@@ -2639,11 +2975,6 @@ generate-object-property@^1.1.0:
   dependencies:
     is-property "^1.0.0"
 
-gensync@^1.0.0-beta.2:
-  version "1.0.0-beta.2"
-  resolved "https://registry.npmjs.org/gensync/-/gensync-1.0.0-beta.2.tgz"
-  integrity sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==
-
 get-browser-rtc@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/get-browser-rtc/-/get-browser-rtc-1.1.0.tgz"
@@ -2664,6 +2995,7 @@ get-graphql-from-jsonschema@8.1.0:
     common-tags "1.8.2"
     defekt "9.3.0"
 
+get-intrinsic@^1.2.6:
 get-intrinsic@^1.2.6:
   version "1.3.0"
   resolved "https://registry.npmjs.org/get-intrinsic/-/get-intrinsic-1.3.0.tgz"
@@ -2759,6 +3091,7 @@ gopd@^1.0.1, gopd@^1.2.0:
   integrity sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==
 
 got@^11.8.5:
+got@^11.8.5:
   version "11.8.6"
   resolved "https://registry.npmjs.org/got/-/got-11.8.6.tgz"
   integrity sha512-6tfZ91bOr7bOXnK7PRDCGBLa1H4U080YHNaAQ2KsMGlLEzRbk44nsZF2E1IeRc3vtJHPVbKCYgdFbaGO2ljd8g==
@@ -2796,6 +3129,7 @@ has-flag@^4.0.0:
   integrity sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==
 
 has-property-descriptors@^1.0.0:
+has-property-descriptors@^1.0.0:
   version "1.0.2"
   resolved "https://registry.npmjs.org/has-property-descriptors/-/has-property-descriptors-1.0.2.tgz"
   integrity sha512-55JNKuIW+vq4Ke1BjOTjM2YctQIvCT7GFzHwmfZPGo5wnrgkid0YQtnAleFSqumZm4az3n2BS+erby5ipJdgrg==
@@ -2807,6 +3141,7 @@ has-symbols@^1.0.3, has-symbols@^1.1.0:
   resolved "https://registry.npmjs.org/has-symbols/-/has-symbols-1.1.0.tgz"
   integrity sha512-1cDNdwJ2Jaohmb3sg4OmKaMBwuC48sYni5HUw2DvsC8LjGTLK9h+eb1X6RyuOHe4hT0ULCW68iomhjUoKUqlPQ==
 
+has-tostringtag@^1.0.2:
 has-tostringtag@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/has-tostringtag/-/has-tostringtag-1.0.2.tgz"
@@ -2953,6 +3288,7 @@ http2-wrapper@^1.0.0-beta.5.2:
     resolve-alpn "^1.0.0"
 
 https-proxy-agent@^7.0.0:
+https-proxy-agent@^7.0.0:
   version "7.0.6"
   resolved "https://registry.npmjs.org/https-proxy-agent/-/https-proxy-agent-7.0.6.tgz"
   integrity sha512-vK9P5/iUfdl95AI+JVyUuIcVtd4ofvtrOr3HNtM2yxC9bnMbEdp3x01OhQNnjb8IJYi38VlTE3mBXwcfvywuSw==
@@ -2960,6 +3296,7 @@ https-proxy-agent@^7.0.0:
     agent-base "^7.1.2"
     debug "4"
 
+ieee754@^1.2.1:
 ieee754@^1.2.1:
   version "1.2.1"
   resolved "https://registry.npmjs.org/ieee754/-/ieee754-1.2.1.tgz"
@@ -3020,11 +3357,6 @@ is-decimal@^2.0.0:
   resolved "https://registry.npmjs.org/is-decimal/-/is-decimal-2.0.1.tgz"
   integrity sha512-AAB9hiomQs5DXWcRB1rqsxGUstbRroFOPPVAomNk/3XHR5JyEZChOyTWe2oayKnsSsr/kcGqF+z6yuH6HHpN0A==
 
-is-extglob@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.npmjs.org/is-extglob/-/is-extglob-2.1.1.tgz"
-  integrity sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==
-
 is-fullwidth-code-point@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz"
@@ -3058,11 +3390,6 @@ is-my-json-valid@2.20.6:
     jsonpointer "^5.0.0"
     xtend "^4.0.0"
 
-is-number@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz"
-  integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
-
 is-plain-obj@^4.0.0:
   version "4.1.0"
   resolved "https://registry.npmjs.org/is-plain-obj/-/is-plain-obj-4.1.0.tgz"
@@ -3092,6 +3419,9 @@ isbinaryfile@^5.0.0:
   version "5.0.7"
   resolved "https://registry.npmjs.org/isbinaryfile/-/isbinaryfile-5.0.7.tgz"
   integrity sha512-gnWD14Jh3FzS3CPhF0AxNOJ8CxqeblPTADzI38r0wt8ZyQl5edpy75myt08EG2oKvpyiqSqsx+Wkz9vtkbTqYQ==
+  version "5.0.7"
+  resolved "https://registry.npmjs.org/isbinaryfile/-/isbinaryfile-5.0.7.tgz"
+  integrity sha512-gnWD14Jh3FzS3CPhF0AxNOJ8CxqeblPTADzI38r0wt8ZyQl5edpy75myt08EG2oKvpyiqSqsx+Wkz9vtkbTqYQ==
 
 isexe@^2.0.0:
   version "2.0.0"
@@ -3100,6 +3430,7 @@ isexe@^2.0.0:
 
 isexe@^3.1.1:
   version "3.1.5"
+  resolved "https://registry.npmjs.org/isexe/-/isexe-3.1.5.tgz"
   resolved "https://registry.npmjs.org/isexe/-/isexe-3.1.5.tgz"
   integrity sha512-6B3tLtFqtQS4ekarvLVMZ+X+VlvQekbe4taUkf/rhVO3d/h0M2rfARm/pXLcPEsjjMsFgrFgSrhQIxcSVrBz8w==
 
@@ -3112,7 +3443,11 @@ jake@^10.8.5:
   version "10.9.4"
   resolved "https://registry.npmjs.org/jake/-/jake-10.9.4.tgz"
   integrity sha512-wpHYzhxiVQL+IV05BLE2Xn34zW1S223hvjtqk0+gsPrwd/8JNLXJgZZM/iPFsYc1xyphF+6M6EvdE5E9MBGkDA==
+  version "10.9.4"
+  resolved "https://registry.npmjs.org/jake/-/jake-10.9.4.tgz"
+  integrity sha512-wpHYzhxiVQL+IV05BLE2Xn34zW1S223hvjtqk0+gsPrwd/8JNLXJgZZM/iPFsYc1xyphF+6M6EvdE5E9MBGkDA==
   dependencies:
+    async "^3.2.6"
     async "^3.2.6"
     filelist "^1.0.4"
     picocolors "^1.1.1"
@@ -3463,6 +3798,7 @@ mdast-util-phrasing@^4.0.0:
 
 mdast-util-to-hast@^13.0.0:
   version "13.2.1"
+  resolved "https://registry.npmjs.org/mdast-util-to-hast/-/mdast-util-to-hast-13.2.1.tgz"
   resolved "https://registry.npmjs.org/mdast-util-to-hast/-/mdast-util-to-hast-13.2.1.tgz"
   integrity sha512-cctsq2wp5vTsLIcaymblUriiTcZd0CwWtCbLvrOzYCDZoWyMNV8sZ7krj09FSnsiJi3WVsHLM4k6Dq/yaPyCXA==
   dependencies:
@@ -3856,6 +4192,7 @@ minimatch@^10.2.5:
   integrity sha512-vpLQEs+VLCr1nU0BXS07maYoFwlDAH0gngQuuttxIwutDFEMHq2blX+8vpgxDdK3J1PwjCJiep77OitTZ4Ll1A==
   dependencies:
     brace-expansion "^5.0.8"
+    brace-expansion "^5.0.8"
 
 minimatch@^3.0.4:
   version "3.1.5"
@@ -3904,6 +4241,7 @@ minipass@^7.0.4, minipass@^7.1.2:
 
 minizlib@^3.1.0:
   version "3.1.0"
+  resolved "https://registry.npmjs.org/minizlib/-/minizlib-3.1.0.tgz"
   resolved "https://registry.npmjs.org/minizlib/-/minizlib-3.1.0.tgz"
   integrity sha512-KZxYo1BUkWD2TVFLr0MQoM8vUUigWD3LlD83a/75BqC+4qE0Hb1Vo5v1FgcfaNXvfXzr+5EhQ6ing/CaBijTlw==
   dependencies:
@@ -3967,6 +4305,7 @@ node-abi@^4.2.0:
 node-api-version@^0.2.1:
   version "0.2.1"
   resolved "https://registry.npmjs.org/node-api-version/-/node-api-version-0.2.1.tgz"
+  resolved "https://registry.npmjs.org/node-api-version/-/node-api-version-0.2.1.tgz"
   integrity sha512-2xP/IGGMmmSQpI1+O/k72jF/ykvZ89JeuKX3TLJAYPDVLUalrshrLHkeVcCCZqG/eEa635cr8IBYzgnDvM2O8Q==
   dependencies:
     semver "^7.3.5"
@@ -3981,9 +4320,14 @@ node-gyp@^12.2.0:
     graceful-fs "^4.2.6"
     nopt "^9.0.0"
     proc-log "^6.0.0"
+    nopt "^9.0.0"
+    proc-log "^6.0.0"
     semver "^7.3.5"
     tar "^7.5.4"
+    tar "^7.5.4"
     tinyglobby "^0.2.12"
+    undici "^6.25.0"
+    which "^6.0.0"
     undici "^6.25.0"
     which "^6.0.0"
 
@@ -4144,8 +4488,9 @@ pend@~1.2.0:
   integrity sha512-F3asv42UuXchdzt+xXqfW1OGlVBe+mxa2mqI0pg5yAHZPvFmY3Y6drSf/GQ1A86WgWEN9Kzh/WrgKa6iGcHXLg==
 
 picocolors@^1.1.1:
+picocolors@^1.1.1:
   version "1.1.1"
-  resolved "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz"
+  resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.1.1.tgz#3d321af3eab939b083c8f929a1d12cda81c26b6b"
   integrity sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==
 
 picomatch@^2.0.4:
@@ -4300,6 +4645,7 @@ promise-retry@^2.0.1:
 proper-lockfile@^4.1.2:
   version "4.1.2"
   resolved "https://registry.npmjs.org/proper-lockfile/-/proper-lockfile-4.1.2.tgz"
+  resolved "https://registry.npmjs.org/proper-lockfile/-/proper-lockfile-4.1.2.tgz"
   integrity sha512-TjNPblN4BwAWMXU8s9AEz4JmQxnD1NNL7bNOY/AKUzyamc379FWASUhc/K1pL2noVb+XmZKLL68cjzLsiOAMaA==
   dependencies:
     graceful-fs "^4.2.4"
@@ -4319,6 +4665,7 @@ pump@^3.0.0:
     end-of-stream "^1.1.0"
     once "^1.3.1"
 
+punycode@^2.3.1:
 punycode@^2.3.1:
   version "2.3.1"
   resolved "https://registry.npmjs.org/punycode/-/punycode-2.3.1.tgz"
@@ -4346,16 +4693,71 @@ quick-lru@^5.1.1:
   resolved "https://registry.npmjs.org/quick-lru/-/quick-lru-5.1.1.tgz"
   integrity sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==
 
-radix-themes-tw@^0.2.3:
-  version "0.2.3"
-  resolved "https://registry.npmjs.org/radix-themes-tw/-/radix-themes-tw-0.2.3.tgz"
-  integrity sha512-n3Luc4LzB5Zcv6SSvHWGey4Wzx1qtt+3Yj6OmRXzAD6RtZ2+RkT0OoilyxlaKr+kqJuvKhF4YfLbcMAkFu5gEw==
+radix-themes-tw@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/radix-themes-tw/-/radix-themes-tw-1.1.0.tgz#2b142db52f143012ba86184a9a5e809055a1b546"
+  integrity sha512-dfgeuewivp4iZE8K8qjRl7bnqr6jxtqf5iI/5Mm6B4xqoCuSdmU90TJ9dzucRNyRqEeL2GsCROxw6NeADEGkKQ==
 
 radix-ui@^1.1.3:
   version "1.8.1"
   resolved "https://registry.npmjs.org/radix-ui/-/radix-ui-1.8.1.tgz"
   integrity sha512-HPfpVGizO9xANlsFSauruLhRe/3+iOt3vPX0MXYle/UQi3gorQrSYtBcdiv0BZYewcl2rvL59qrIuLFMGAmUrw==
   dependencies:
+    "@radix-ui/primitive" "1.2.0"
+    "@radix-ui/react-accessible-icon" "1.2.0"
+    "@radix-ui/react-accordion" "1.3.1"
+    "@radix-ui/react-alert-dialog" "1.2.1"
+    "@radix-ui/react-arrow" "1.1.17"
+    "@radix-ui/react-aspect-ratio" "1.2.0"
+    "@radix-ui/react-avatar" "1.3.1"
+    "@radix-ui/react-checkbox" "1.4.1"
+    "@radix-ui/react-collapsible" "1.2.1"
+    "@radix-ui/react-collection" "1.2.0"
+    "@radix-ui/react-compose-refs" "1.1.5"
+    "@radix-ui/react-context" "1.3.0"
+    "@radix-ui/react-context-menu" "2.4.1"
+    "@radix-ui/react-dialog" "1.3.1"
+    "@radix-ui/react-direction" "1.2.0"
+    "@radix-ui/react-dismissable-layer" "1.2.1"
+    "@radix-ui/react-dropdown-menu" "2.2.1"
+    "@radix-ui/react-focus-guards" "1.2.0"
+    "@radix-ui/react-focus-scope" "1.3.1"
+    "@radix-ui/react-form" "0.3.0"
+    "@radix-ui/react-hover-card" "1.2.1"
+    "@radix-ui/react-label" "2.1.17"
+    "@radix-ui/react-menu" "2.2.1"
+    "@radix-ui/react-menubar" "1.2.1"
+    "@radix-ui/react-navigation-menu" "1.4.1"
+    "@radix-ui/react-one-time-password-field" "0.2.1"
+    "@radix-ui/react-password-toggle-field" "0.2.1"
+    "@radix-ui/react-popover" "1.3.1"
+    "@radix-ui/react-popper" "1.4.0"
+    "@radix-ui/react-portal" "1.2.0"
+    "@radix-ui/react-presence" "1.1.11"
+    "@radix-ui/react-primitive" "2.2.0"
+    "@radix-ui/react-progress" "1.2.1"
+    "@radix-ui/react-radio-group" "1.5.1"
+    "@radix-ui/react-roving-focus" "1.2.1"
+    "@radix-ui/react-scroll-area" "1.4.0"
+    "@radix-ui/react-select" "2.4.1"
+    "@radix-ui/react-separator" "1.2.0"
+    "@radix-ui/react-slider" "1.6.1"
+    "@radix-ui/react-slot" "1.5.0"
+    "@radix-ui/react-switch" "1.4.1"
+    "@radix-ui/react-tabs" "1.2.1"
+    "@radix-ui/react-toast" "1.3.1"
+    "@radix-ui/react-toggle" "1.2.1"
+    "@radix-ui/react-toggle-group" "1.2.1"
+    "@radix-ui/react-toolbar" "1.2.1"
+    "@radix-ui/react-tooltip" "1.4.1"
+    "@radix-ui/react-use-callback-ref" "1.1.5"
+    "@radix-ui/react-use-controllable-state" "1.3.0"
+    "@radix-ui/react-use-effect-event" "0.0.5"
+    "@radix-ui/react-use-escape-keydown" "1.1.6"
+    "@radix-ui/react-use-is-hydrated" "0.1.3"
+    "@radix-ui/react-use-layout-effect" "1.1.4"
+    "@radix-ui/react-use-size" "1.1.5"
+    "@radix-ui/react-visually-hidden" "1.2.13"
     "@radix-ui/primitive" "1.2.0"
     "@radix-ui/react-accessible-icon" "1.2.0"
     "@radix-ui/react-accordion" "1.3.1"
@@ -4425,6 +4827,7 @@ randombytes@^2.1.0:
   integrity sha512-Y0bARz53lhEC1NMCASs0/j+faB/zqt3R8hpvg1e8+61ZVJ4UL0UdC4cBbXfZMcIuhrfgeILTLe+ZeBCavQPtKQ==
   dependencies:
     scheduler "^0.28.0"
+    scheduler "^0.28.0"
 
 react-hook-form@^7.91.0:
   version "7.91.0"
@@ -4437,6 +4840,7 @@ react-markdown@^10.1.0:
   integrity sha512-qKxVopLT/TyA6BX3Ue5NwabOsAzm0Q7kAPwq6L+wWDwisYs7R8vZ0nRXqq6rkueboxpkjvLGU9fWifiX/ZZFxQ==
   dependencies:
     "@types/hast" "^3.0.0"
+    "@types/mdast" "^4.0.0"
     "@types/mdast" "^4.0.0"
     devlop "^1.0.0"
     hast-util-to-jsx-runtime "^2.0.0"
@@ -4550,6 +4954,15 @@ readable-stream@^2.0.2:
     util-deprecate "~1.0.1"
 
 readable-stream@^3.6.0:
+    core-util-is "~1.0.0"
+    inherits "~2.0.3"
+    isarray "~1.0.0"
+    process-nextick-args "~2.0.0"
+    safe-buffer "~5.1.1"
+    string_decoder "~1.1.1"
+    util-deprecate "~1.0.1"
+
+readable-stream@^3.6.0:
   version "3.6.2"
   resolved "https://registry.npmjs.org/readable-stream/-/readable-stream-3.6.2.tgz"
   integrity sha512-9u/sniCrY3D5WdsERHzHE4G2YCXqoG5FTHUiCC4SIbr6XcLZBY05ya9EKjYek9O5xOAwjGq+1JdGBAS7Q9ScoA==
@@ -4597,9 +5010,11 @@ rehype-mathjax@^7.1.0:
     "@types/mathjax" "^0.0.40"
     hast-util-to-text "^4.0.0"
     hastscript "^9.0.0"
+    hastscript "^9.0.0"
     mathjax-full "^3.0.0"
     unified "^11.0.0"
     unist-util-visit-parents "^6.0.0"
+    vfile "^6.0.0"
     vfile "^6.0.0"
 
 remark-gfm@^4.0.1:
@@ -4784,24 +5199,38 @@ rxdb@^17.6.0:
     "@types/simple-peer" "9.11.9"
     "@types/ws" "8.18.1"
     ajv "8.20.0"
+    ajv "8.20.0"
     ajv-formats "3.0.1"
+    array-push-at-sort-position "5.0.0"
     array-push-at-sort-position "5.0.0"
     as-typed "1.3.2"
     broadcast-channel "7.4.0"
+    broadcast-channel "7.4.0"
     crypto-js "4.2.0"
+    custom-idle-queue "5.0.2"
+    dexie "4.4.2"
+    event-reduce-js "6.0.0"
     custom-idle-queue "5.0.2"
     dexie "4.4.2"
     event-reduce-js "6.0.0"
     get-graphql-from-jsonschema "8.1.0"
     graphql "17.0.2"
     graphql-ws "6.3.0"
+    graphql "17.0.2"
+    graphql-ws "6.3.0"
     is-my-json-valid "2.20.6"
+    js-base64 "3.9.4"
     js-base64 "3.9.4"
     jsonschema-key-compression "1.7.0"
     mingo "7.2.4"
     nostr-tools "2.25.2"
     oblivious-set "2.0.0"
+    mingo "7.2.4"
+    nostr-tools "2.25.2"
+    oblivious-set "2.0.0"
     simple-peer "9.11.1"
+    ws "8.22.0"
+    z-schema "12.4.6"
     ws "8.22.0"
     z-schema "12.4.6"
 
@@ -4812,6 +5241,7 @@ rxjs@^7.8.2:
   dependencies:
     tslib "^2.1.0"
 
+safe-buffer@^5.1.0, safe-buffer@~5.2.0:
 safe-buffer@^5.1.0, safe-buffer@~5.2.0:
   version "5.2.1"
   resolved "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz"
@@ -4854,9 +5284,10 @@ semver-compare@^1.0.0:
 semver@^5.5.0:
   version "5.7.2"
   resolved "https://registry.npmjs.org/semver/-/semver-5.7.2.tgz"
+  resolved "https://registry.npmjs.org/semver/-/semver-5.7.2.tgz"
   integrity sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==
 
-semver@^6.2.0, semver@^6.3.1:
+semver@^6.2.0:
   version "6.3.1"
   resolved "https://registry.npmjs.org/semver/-/semver-6.3.1.tgz"
   integrity sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==
@@ -4889,7 +5320,13 @@ semver@^7.8.5:
 semver@~7.7.3:
   version "7.7.4"
   resolved "https://registry.npmjs.org/semver/-/semver-7.7.4.tgz"
+  resolved "https://registry.npmjs.org/semver/-/semver-7.7.4.tgz"
   integrity sha512-vFKC2IEtQnVhpT78h1Yp8wzwrf8CM+MzKMHGJZfBtzhZNycRFnXsHk6E5TxIkkMsgNS7mdX3AGB7x2QM2di4lA==
+
+semver@^7.8.5:
+  version "7.8.5"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.8.5.tgz#39b646037dd50c14fb451e7e4cac58ed8b863f69"
+  integrity sha512-Y7/KDsb8LjooZpwaqGyulO6DQlksgCncchHGk+sZIY4SBvUocMBEFH5Ur1fI4dV+Jvl0w6cjvucaIi40puRioA==
 
 serialize-error@^7.0.1:
   version "7.0.1"
@@ -5021,6 +5458,7 @@ stubborn-fs@^2.0.0:
   integrity sha512-Y0AvSwDw8y+nlSNFXMm2g6L51rBGdAQT20J3YSOqxC53Lo3bjWRtr2BKcfYoAf352WYpsZSTURrA0tqhfgudPA==
   dependencies:
     stubborn-utils "^1.0.1"
+    stubborn-utils "^1.0.1"
 
 stubborn-utils@^1.0.1:
   version "1.0.2"
@@ -5061,10 +5499,10 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-supports-preserve-symlinks-flag@^1.0.0:
+tagged-tag@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
-  integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
+  resolved "https://registry.yarnpkg.com/tagged-tag/-/tagged-tag-1.0.0.tgz#a0b5917c2864cba54841495abfa3f6b13edcf4d6"
+  integrity sha512-yEFYrVhod+hdNyx7g5Bnkkb0G6si8HJurOoOEgC8B/O0uXLHlaey/65KRv6cuWBNhBgHKAROVpc7QyYqE5gFng==
 
 tagged-tag@^1.0.0:
   version "1.0.0"
@@ -5142,6 +5580,7 @@ thenify-all@^1.0.0:
 
 tiny-async-pool@1.3.0:
   version "1.3.0"
+  resolved "https://registry.npmjs.org/tiny-async-pool/-/tiny-async-pool-1.3.0.tgz"
   resolved "https://registry.npmjs.org/tiny-async-pool/-/tiny-async-pool-1.3.0.tgz"
   integrity sha512-01EAw5EDrcVrdgyCLgoSPvqznC0sVxDSVeiOz09FUpjh71G79VCqneOr+xvt7T1r76CF6ZZfPjHorN2+d+3mqA==
   dependencies:
@@ -5225,6 +5664,7 @@ uint8array-extras@^1.5.0:
 
 undici-types@~6.21.0:
   version "6.21.0"
+  resolved "https://registry.npmjs.org/undici-types/-/undici-types-6.21.0.tgz"
   resolved "https://registry.npmjs.org/undici-types/-/undici-types-6.21.0.tgz"
   integrity sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==
 
@@ -5369,6 +5809,7 @@ utf8-byte-length@^1.0.1:
   integrity sha512-Xn0w3MtiQ6zoz2vFyUVruaCL53O/DwUvkEeOvj+uulMm0BkUGYWmBYVyElqZaSLhY6ZD0ulfU3aBra2aVT4xfA==
 
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
+util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
@@ -5441,6 +5882,11 @@ webcrypto-core@^1.9.2:
     "@peculiar/utils" "^2.0.2"
     asn1js "^3.0.10"
     tslib "^2.8.1"
+    "@peculiar/asn1-schema" "^2.7.0"
+    "@peculiar/json-schema" "^1.1.12"
+    "@peculiar/utils" "^2.0.2"
+    asn1js "^3.0.10"
+    tslib "^2.8.1"
 
 whatwg-fetch@^3.6.20:
   version "3.6.20"
@@ -5461,6 +5907,7 @@ which@^2.0.1:
 
 which@^5.0.0:
   version "5.0.0"
+  resolved "https://registry.npmjs.org/which/-/which-5.0.0.tgz"
   resolved "https://registry.npmjs.org/which/-/which-5.0.0.tgz"
   integrity sha512-JEdGzHwwkrbWoGOlIHqQ5gtprKGOenpDHpxE9zVR1bWbOtYRyPPHMe9FaP6x61CmNaTThSkb0DAJte5jD+DmzQ==
   dependencies:
@@ -5512,11 +5959,6 @@ y18n@^5.0.5:
   resolved "https://registry.npmjs.org/y18n/-/y18n-5.0.8.tgz"
   integrity sha512-0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA==
 
-yallist@^3.0.2:
-  version "3.1.1"
-  resolved "https://registry.npmjs.org/yallist/-/yallist-3.1.1.tgz"
-  integrity sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==
-
 yallist@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/yallist/-/yallist-4.0.0.tgz"
@@ -5524,6 +5966,7 @@ yallist@^4.0.0:
 
 yallist@^5.0.0:
   version "5.0.0"
+  resolved "https://registry.npmjs.org/yallist/-/yallist-5.0.0.tgz"
   resolved "https://registry.npmjs.org/yallist/-/yallist-5.0.0.tgz"
   integrity sha512-YgvUTfwqyc7UXVMrB+SImsVYSmTS8X/tSrtdNZMImM+n7+QTriRXyXim0mBrTXNeqzVF0KWGgHPeiyViFFrNDw==
 
@@ -5566,7 +6009,11 @@ z-schema@12.4.6:
     punycode "^2.3.1"
     safe-regex2 "^5.1.0"
     validator "^13.15.26"
+    punycode "^2.3.1"
+    safe-regex2 "^5.1.0"
+    validator "^13.15.26"
   optionalDependencies:
+    commander "^15.0.0"
     commander "^15.0.0"
 
 zwitch@^2.0.0:
