@@ -37,7 +37,7 @@
     "dayjs": "^1.11.23",
     "electron": "^45.1.0",
     "electron-builder": "^26.18.0",
-    "framer-motion": "^14.7.1",
+    "framer-motion": "^14.8.0",
     "lodash": "^4.18.1",
     "lodash-es": "^4.18.1",
     "lucide-react": "^1.64.0",
